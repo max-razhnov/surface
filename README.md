@@ -2,7 +2,7 @@
 Html &amp; CSS layout
 
 [click on this link](#my-multi-word-header)
-[Surface Desktop](#Surface Desktop)
+[Surface Desktop](#Surface-Desktop)
 
 
 ### Surface Desktop:
