@@ -2,7 +2,7 @@
 Html &amp; CSS layout
 
 
-[Surface Desktop](#Surface Desktop)
+[Surface Desktop](#anchors-in-markdown)
 
 
 ### Surface Desktop:
