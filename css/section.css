@@ -1,0 +1,252 @@
+.section-wrapper {
+  max-width: 692px;
+  width: 100%;
+}
+
+.section-top__container {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  display: flex;
+  justify-content: flex-end;
+  height: 405px;
+}
+
+.section-top {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.section-top .wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.title {
+  padding: 112px 0 0 0;
+  margin: 0;
+  text-transform: uppercase;
+  color: #e7e7e7;
+  font: 90px / normal "ProximaNova";
+  font-weight: 700;
+  line-height: 0.67;
+}
+
+.section-subtitle {
+  display: flex;
+  align-items: center;
+  margin: 95px 0 0 0;
+  font: 36px / 1.04 "ProximaNova Bl";
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: #c1c1c1;
+}
+
+.section-title__number {
+  color: #000;
+  margin-right: 10px;
+  font: 18px / 1.1 "ProximaNova Bl";
+  border-bottom: 5px solid rgb(94, 66, 176);
+  border-radius: 2px;
+}
+
+.section-description {
+  margin: 30px 0 0 0;
+  font: bold 20px / normal "ProximaNova";
+  letter-spacing: 0.8px;
+  color: #000000;
+}
+
+.section-middle {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.section-middle__container {
+  background-color: #f7f4fa;
+  height: 256px;
+}
+
+.section-middle__container .section-subtitle {
+  margin-top: 65px;
+}
+
+.section-bottom__container {
+  height: 297px;
+  background-color: #5e42b0;
+}
+
+.section-bottom__container .section-title__number {
+  border-bottom: 5px solid #efefef;
+}
+
+.section-bottom__container .section-description {
+  color: #fff;
+}
+
+.section-middle .wrapper {
+  max-width: calc(1920px - 324px * 2);
+}
+
+.section-middle .title {
+  padding-top: 112px;
+}
+
+.section-middle .section-wrapper {
+  max-width: 564px;
+}
+
+.section-middle .section-top__container {
+  height: 443px;
+}
+
+.section-middle .section-subtitle {
+  margin-top: 0;
+  padding-top: 63px;
+}
+
+.section-middle .section-middle__container {
+  height: 244px;
+}
+
+.section-middle .section-bottom__container {
+  height: 268px;
+  background-color: #0a0e34;
+}
+
+.section-middle .section-bottom__container .section-title__number {
+  color: #9173e6;
+}
+
+.section-number__top {
+  position: relative;
+  top: 0;
+  display: flex;
+  height: 730px;
+  width: 100vw;
+}
+
+.section-number__top > img {
+  height: 730px;
+  width: 50%;
+}
+
+.section-number__top .section-wrapper,
+.section-number__bottom .section-wrapper {
+  padding: 0;
+  margin: 257px 0 0 127px;
+}
+
+.section-number__top .title {
+  padding: 0;
+}
+
+.section-number__top .section-description,
+.section-number__middle .section-description,
+.section-number__bottom .section-description {
+  max-width: 322px;
+  margin-top: 120px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 1.2px;
+}
+
+.section-number__middle {
+  width: 100vw;
+  position: relative;
+  top: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.section-number__middle > img {
+  width: 50%;
+  height: 730px;
+}
+
+.section-number__middle .section-description {
+  margin-top: 77px;
+  max-width: 391px;
+}
+
+.section-number__middle .section-wrapper {
+  margin-left: 192px;
+  /*margin-left: 20%;*/
+}
+
+.section-number__middle .title {
+  padding-top: 257px;
+}
+
+.section-number__bottom {
+  height: 729px;
+  width: 100vw;
+  position: relative;
+  top: 0;
+  display: flex;
+}
+
+.section-number__bottom > img {
+  height: 730px;
+  width: 50%;
+}
+
+.section-number__bottom .section-description {
+  max-width: 512px;
+}
+
+.section-number__bottom .title {
+  padding: 0;
+}
+
+.block-counter {
+  position: absolute;
+  top: 210px;
+  left: 50vw;
+  right: 0;
+  transform: translate(-50%, 0);
+  width: 168px;
+  height: 155px;
+  background-color: #5e3bb4;
+}
+
+.inner-info__wrapper {
+  padding: 61px 72px 61px 72px;
+}
+
+.inner-info {
+  height: 32px;
+  width: 24px;
+  font-weight: bold;
+  border-bottom: 5px solid #907acb;
+  border-radius: 2px;
+  font-size: 24px;
+  color: #f5f6f7;
+}
+
+#player-football {
+  position: absolute;
+  top: 41px;
+  left: 16.6%;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+}
+
+#player-basket {
+  position: absolute;
+  top: -30px;
+  right: 6.5%;
+  bottom: 0;
+}

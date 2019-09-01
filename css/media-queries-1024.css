@@ -1,0 +1,96 @@
+@media only screen and (max-width: 1024px) {
+	.wrapper {
+		width: 824px;
+		margin: 0 100px 0 100px;
+	}
+	.header-logo_buttons {
+		width: auto;
+	}
+	.first-text{
+	margin-top: 300px;
+	height: 64px;
+	width: 500px;
+	font-weight: 700;
+	font-size: 64px;
+	letter-spacing: 4.2px;
+	text-align: left;
+	}
+	.sec-text{
+	margin:30px 0 0 30px;
+	width: 800px;
+	height: 64px;
+ 	font-size: 64px;
+ 	font-weight: 700;
+ 	text-align: right;
+	letter-spacing: 4.2px;
+	}
+	.menu {
+		margin: 30px 30px 0 30px;
+		width: 764px;
+		display: flex;
+		justify-content: space-between;
+	}
+	.menu_first_block {
+		width: 400px;
+		display: flex;
+		justify-content: space-between;
+	}
+	.menu_second_block {
+		width: 280px;
+		display: flex;
+		justify-content: space-between;
+	}
+	.header-wrap{
+		margin: 150px auto 0 auto;
+		width: 672px; 
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.big-rect {
+		position: absolute;
+		top: 3088px;
+		left: 425px;
+	}
+	.second-block	{
+		position: absolute;
+		top: 3825px;
+		left: 425px;
+	}
+	.third-block {
+		position: absolute;
+		top: 4560px;
+		left: 425px;
+	}
+	.football-player {
+		position: absolute;
+		left: -10%;
+	}
+	.player-line {
+		position: absolute;
+		left: -10%;
+	}
+	.text-athlets__block p {
+		height: auto;
+		width: 120%;
+	}
+	.text-collab__block p {
+		height: auto;
+		width: 120%;
+	}
+	.text-growth__block p {
+		height: auto;
+		width: 120%;
+	}
+	.basketball-player {
+		position: absolute;
+		right: -40%;
+	}
+	.basket-1-line {
+		display: none;
+	}
+	.basket-2-line {
+		position: absolute;
+		right: 0%;
+	}
+}

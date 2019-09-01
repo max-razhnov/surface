@@ -1,0 +1,92 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  top: 0;
+  background: url(../img/footer-people.png) no-repeat center / cover;
+  height: 960px;
+}
+
+.footer-top__txt {
+  margin: 18px 0 0 0;
+  color: #ffffff;
+  text-transform: uppercase;
+  font: 90px / normal "ProximaNova Bl";
+  line-height: 0.67;
+  height: fit-content;
+  letter-spacing: 4.5px;
+}
+
+.footer-bottom__txt {
+  margin: 18px 0 0 0;
+  text-transform: uppercase;
+  font: 36px/0.94 "ProximaNova Bl";
+  text-align: left;
+  color: #a496ca;
+}
+
+.footer-title {
+  margin: 0 auto;
+  max-width: 920px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .wrapper {
+  padding-top: 247px;
+}
+
+.footer-bottom {
+  background-color: rgba(10, 14, 52, 0.6);
+  height: 168px;
+}
+
+.footer-bottom .wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 71px 0 0 0;
+  align-items: center;
+  margin: 0 auto;
+  max-width: calc(1920px - 50px - 60px);
+}
+
+.social {
+  margin-left: 119.8px;
+  width: 100%;
+  max-width: 137px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#fb {
+  width: 15px;
+  height: 27px;
+  background: url("../img/facebook.png") no-repeat center/contain;
+}
+
+#fb:hover,
+#twitter:hover,
+#inst:hover,
+.contact-info > a:hover {
+  opacity: 0.7;
+}
+
+#twitter {
+  width: 27px;
+  height: 22px;
+  background: url("../img/twitter.png") no-repeat center / contain;
+}
+
+#inst {
+  width: 24px;
+  height: 25px;
+  background: url("../img/instagram.png") no-repeat center / contain;
+}
+
+.contact-info {
+  color: #fff;
+  font: 20px / normal "ProximaNova";
+  letter-spacing: 1px;
+}
