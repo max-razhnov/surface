@@ -3,7 +3,7 @@ Html &amp; CSS layout
 
 [Surface Desktop](#Surface-Desktop) |
 [Surface Tablet](#Surface-tablet) |
-[Surface Mobile](#Surface-Mobile)|
+[Surface Mobile](#Surface-Mobile)
 
 
 ### Surface Desktop:
