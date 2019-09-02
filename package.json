@@ -1,0 +1,29 @@
+{
+  "name": "surface",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/max-razhnov/surface.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/max-razhnov/surface/issues"
+  },
+  "homepage": "https://github.com/max-razhnov/surface#readme",
+  "dependencies": {
+    "common.css": "^1.0.1",
+    "fonts.css": "^2.0.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3"
+  }
+}

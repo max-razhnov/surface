@@ -1,0 +1,3065 @@
+@font-face {
+  font-family: "ProximaNova";
+  src: url("/ProximaNova-Regular.03028eba.woff") format("woff");
+}
+
+@font-face {
+  font-family: "ProximaNova Bl";
+  src: url("/ProximaNova-Bold.95242004.woff") format("woff");
+}
+
+html {
+  overflow-x: hidden;
+  font-family: "ProximaNova";
+  font-weight: 400;
+  font-size: 20px;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: calc(1920px - 193px - 196px);
+  min-width: 292px;
+}
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  height: 960px;
+  width: 100vw;
+  background: url(/football-back.30cbb067.png) no-repeat center top / cover;
+}
+
+.header-top__info {
+  height: 35px;
+  width: 100%;
+  padding-top: 54px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 33px;
+  width: 190px;
+  background: url("/SURFACE.18f95b66.png") no-repeat center / contain;
+}
+
+.header-about {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font: 14px / normal "ProximaNova";
+  letter-spacing: 0.7px;
+}
+
+.header-about:hover {
+  opacity: 0.8;
+  transition: 0.2s ease-in-out;
+}
+
+.header-top-txt,
+.header-bottom-txt {
+  color: #ffffff;
+  text-transform: uppercase;
+  font: 90px / normal "ProximaNova Bl";
+  letter-spacing: 4.2px;
+}
+
+.header-top-txt {
+  width: fit-content;
+  text-align: left;
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 285px 0 0 0;
+}
+
+.header-bottom-txt {
+  line-height: 0.8;
+  position: relative;
+  text-align: right;
+  margin: 0;
+}
+
+#line {
+  height: 6px;
+  width: 406px;
+  color: #5e42b0;
+  background-color: #5e42b0;
+  -webkit-transform: rotate(-50deg);
+  transform: rotate(-50deg);
+
+  position: absolute;
+  top: 405px;
+  left: 488px;
+  z-index: 80;
+}
+
+.menu {
+  /*height: 20px;*/
+  padding: 0;
+  max-width: 567px;
+  margin: 18px 0 0 auto;
+  /*list-style: none;*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-left__container {
+  /*height: 12px;*/
+  width: 58.77193%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-right__container {
+  /*height: 12px;*/
+  width: 32.45614%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__item {
+  text-decoration: none;
+  color: #9071ea;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.menu__item:hover {
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+.btn-wrap {
+  margin: 180px auto 0 auto;
+  max-width: 672px;
+  /*width: 90%;*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 311px;
+  min-width: 142px;
+  height: 77px;
+  transition: 0.5s;
+  border-radius: 35px;
+  background-color: #5e42b0;
+  border: none;
+  outline: none;
+}
+
+.app-btn:first-child {
+  padding: 0 67px 0 43px;
+}
+
+.app-btn:nth-child(2) {
+  padding: 0 85px 0 64px;
+}
+
+.app-btn:hover {
+  box-shadow: 0px 16px 24px 0 #0a0e34;
+  cursor: pointer;
+}
+
+.apple-icon {
+  display: block;
+  min-width: 33px;
+  width: 33px;
+  height: 37px;
+  background: url("/Icon-Apple.50428946.png") no-repeat center / contain;
+}
+
+.app-btn__text {
+  text-align: left;
+  margin: 0;
+  text-transform: uppercase;
+  font: 14px / normal "ProximaNova";
+  font-weight: 400;
+  letter-spacing: 0.7px;
+  color: #ffffff;
+}
+
+.app-text {
+  display: block;
+  font-weight: 700;
+  line-height: 1.03;
+}
+
+.google-icon {
+  min-width: 36px;
+  width: 36px;
+  height: 39px;
+  background: url("/Icon-GooglePlay.3aa72e96.png") no-repeat center / contain;
+}
+
+@media all and (max-width: 768px) {
+  .header .wrapper {
+    max-width: calc(768px - 20px - 20px);
+  }
+
+  .header-top-txt,
+  .header-bottom-txt {
+    font: bold 64px / normal "ProximaNova Bl";
+    letter-spacing: 3.18px;
+  }
+
+  .header-top-txt {
+    line-height: 0.49;
+  }
+
+  .header-bottom-txt {
+    margin: 33px auto 0 auto;
+    max-width: 490px;
+    text-align: left;
+  }
+
+  .menu {
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 666px;
+  }
+
+  .menu-left__container {
+    max-width: 378px;
+    width: 100%;
+  }
+
+  .menu-right__container {
+    max-width: 226px;
+    width: 100%;
+  }
+
+  .menu__item {
+    font: 16px / normal "ProximaNova";
+    font-weight: 400;
+    letter-spacing: 0.7px;
+  }
+}
+
+@media all and (min-width: 425px) and (max-width: 670px) {
+  .header-top-txt,
+  .header-bottom-txt {
+    font: 50px/ 0.97 "ProximaNova Bl";
+    letter-spacing: 1.6px;
+  }
+
+  .header-about {
+    display: none;
+  }
+  .header-top__info {
+    justify-content: center;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .app-btn {
+    /*width: 142px;*/
+    /*height: 39px;*/
+  }
+
+}
+
+.section-wrapper {
+  max-width: 692px;
+  width: 100%;
+}
+
+.section-top__container {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  display: flex;
+  justify-content: flex-end;
+  height: 405px;
+}
+
+.section-top {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.section-top .wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.title {
+  padding: 112px 0 0 0;
+  margin: 0;
+  text-transform: uppercase;
+  color: #e7e7e7;
+  font: 90px / normal "ProximaNova";
+  font-weight: 700;
+  line-height: 0.8;
+  /* line-height: 0.67; */
+}
+
+.section-subtitle {
+  display: flex;
+  align-items: center;
+  margin: 95px 0 0 0;
+  font: 36px / 1.04 "ProximaNova Bl";
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: #c1c1c1;
+}
+
+.section-title__number {
+  color: #000;
+  margin-right: 10px;
+  font: 18px / 1.1 "ProximaNova Bl";
+  border-bottom: 5px solid rgb(94, 66, 176);
+  border-radius: 2px;
+}
+
+.section-description {
+  margin: 30px 0 0 0;
+  font: bold 20px / normal "ProximaNova";
+  letter-spacing: 0.8px;
+  color: #000000;
+}
+
+.section-middle {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.section-middle__container {
+  background-color: #f7f4fa;
+  height: 256px;
+}
+
+.section-middle__container .section-subtitle {
+  margin-top: 65px;
+}
+
+.section-bottom__container {
+  height: 297px;
+  background-color: #5e42b0;
+}
+
+.section-bottom__container .section-title__number {
+  border-bottom: 5px solid #efefef;
+}
+
+.section-bottom__container .section-description {
+  color: #fff;
+}
+
+.section-middle .wrapper {
+  max-width: calc(1920px - 324px * 2);
+}
+
+.section-middle .title {
+  padding-top: 112px;
+}
+
+.section-middle .section-wrapper {
+  max-width: 564px;
+}
+
+.section-middle .section-top__container {
+  height: 443px;
+}
+
+.section-middle .section-subtitle {
+  margin-top: 0;
+  padding-top: 63px;
+}
+
+.section-middle .section-middle__container {
+  height: 244px;
+}
+
+.section-middle .section-bottom__container {
+  height: 268px;
+  background-color: #0a0e34;
+}
+
+.section-middle .section-bottom__container .section-title__number {
+  color: #9173e6;
+}
+
+.section-number__top {
+  position: relative;
+  top: 0;
+  display: flex;
+  height: 730px;
+  width: 100vw;
+}
+
+.section-number__top>img {
+  height: 730px;
+  width: 50%;
+  object-fit: cover;
+}
+
+.section-number__top .section-wrapper, .section-number__bottom .section-wrapper {
+  padding: 0;
+  margin: 257px 0 0 127px;
+}
+
+.section-number__top .title {
+  padding: 0;
+}
+
+.section-number__top .section-description, .section-number__middle .section-description, .section-number__bottom .section-description {
+  max-width: 322px;
+  margin-top: 120px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 1.2px;
+}
+
+.section-number__middle {
+  width: 100vw;
+  position: relative;
+  top: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.section-number__middle>img {
+  width: 50%;
+  height: 730px;
+  object-fit: cover;
+}
+
+.section-number__middle .section-description {
+  margin-top: 77px;
+  max-width: 391px;
+}
+
+.section-number__middle .section-wrapper {
+  margin-left: 192px;
+  /*margin-left: 20%;*/
+}
+
+.section-number__middle .title {
+  padding-top: 257px;
+}
+
+.section-number__bottom {
+  height: 729px;
+  width: 100vw;
+  position: relative;
+  top: 0;
+  display: flex;
+}
+
+.section-number__bottom>img {
+  height: 730px;
+  width: 50%;
+  object-fit: cover;
+}
+
+.section-number__bottom .section-description {
+  max-width: 512px;
+}
+
+.section-number__bottom .title {
+  padding: 0;
+}
+
+.block-counter {
+  position: absolute;
+  top: 210px;
+  left: 50vw;
+  right: 0;
+  transform: translate(-50%, 0);
+  width: 168px;
+  height: 155px;
+  background-color: #5e3bb4;
+}
+
+.inner-info__wrapper {
+  padding: 61px 72px 61px 72px;
+}
+
+.inner-info {
+  height: 32px;
+  width: 24px;
+  font-weight: bold;
+  border-bottom: 5px solid #907acb;
+  border-radius: 2px;
+  font-size: 24px;
+  color: #f5f6f7;
+}
+
+#player-football {
+  position: absolute;
+  top: 41px;
+  left: 16.6%;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+}
+
+#player-basket {
+  position: absolute;
+  top: -30px;
+  right: 6.5%;
+  bottom: 0;
+  z-index: 20;
+  ;
+}
+
+@media all and (max-width: 1920px) {
+  .section-number__middle .section-wrapper {
+    margin: 0 auto;
+  }
+}
+
+@media all and (max-width: 1600px) {
+  #player-football {
+    left: 10%;
+  }
+}
+
+@media all and (max-width: 1440px) {
+  .section-number__middle .title {
+    width: min-content;
+  }
+  .section-number__middle .section-wrapper {
+    width: fit-content;
+  }
+  #player-football {
+    left: 0%;
+  }
+  #player-basket {
+    right: -15%;
+  }
+  .section-top .section-wrapper {
+    max-width: 592px;
+  }
+  .section-middle .section-wrapper {
+    max-width: 544px;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  #player-football {
+    left: -15%;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .footer-bottom .logo, .contact-info {
+    visibility: hidden;
+  }
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  top: 0;
+  background: url(/footer-people.cea5e5af.png) no-repeat center / cover;
+  height: 960px;
+}
+
+.footer-top__txt {
+  margin: 18px 0 0 0;
+  color: #ffffff;
+  text-transform: uppercase;
+  font: 90px / normal "ProximaNova Bl";
+  line-height: 0.67;
+  height: fit-content;
+  letter-spacing: 4.5px;
+}
+
+.footer-bottom__txt {
+  margin: 18px 0 0 0;
+  text-transform: uppercase;
+  font: 36px/0.94 "ProximaNova Bl";
+  text-align: left;
+  color: #a496ca;
+}
+
+.footer-title {
+  margin: 0 auto;
+  max-width: 920px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .wrapper {
+  padding-top: 247px;
+}
+
+.footer-bottom {
+  background-color: rgba(10, 14, 52, 0.6);
+  height: 168px;
+}
+
+.footer-bottom .wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 71px 0 0 0;
+  align-items: center;
+  margin: 0 auto;
+  max-width: calc(1920px - 50px - 60px);
+}
+
+.social {
+  margin-left: 119.8px;
+  width: 100%;
+  max-width: 137px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#fb {
+  width: 15px;
+  height: 27px;
+  background: url("/facebook.1ac97181.png") no-repeat center/contain;
+}
+
+#fb:hover,
+#twitter:hover,
+#inst:hover,
+.contact-info > a:hover {
+  opacity: 0.7;
+}
+
+#twitter {
+  width: 27px;
+  height: 22px;
+  background: url("/twitter.beda2cb5.png") no-repeat center / contain;
+}
+
+#inst {
+  width: 24px;
+  height: 25px;
+  background: url("/instagram.c2789421.png") no-repeat center / contain;
+}
+
+.contact-info {
+  color: #fff;
+  font: 20px / normal "ProximaNova";
+  letter-spacing: 1px;
+}
+
+/*------------------- MEDIA QUERY (1920 - 1440)px --------------------*/
+/*@media only screen and (max-width: 1919px) and (min-width: 1440px) {*/
+  /*.sec-text {*/
+    /*text-align: left;*/
+    /*margin-left: 10%;*/
+    /*width: 1070px;*/
+  /*}*/
+
+  /*.menu {*/
+    /*width: 38%;*/
+  /*}*/
+
+  /*.menu_second_block {*/
+    /*width: 38%;*/
+  /*}*/
+
+  /*.header-wrap {*/
+    /*width: 45%;*/
+  /*}*/
+
+  /*.football-player {*/
+    /*left: 10%;*/
+  /*}*/
+
+  /*.player-line {*/
+    /*left: 10%;*/
+  /*}*/
+
+  /*.basketball-player {*/
+    /*overflow: hidden;*/
+    /*right: 0;*/
+    /*left: 50%;*/
+  /*}*/
+
+  /*.basket-1-line {*/
+    /*right: 0;*/
+    /*left: 80%;*/
+  /*}*/
+
+  /*.basket-2-line {*/
+    /*right: 0;*/
+    /*left: 70%;*/
+  /*}*/
+
+  /*.basket-players__block {*/
+    /*margin-right: 0;*/
+    /*width: 50%;*/
+  /*}*/
+/*}*/
+
+/*!*------------------- MEDIA QUERY 1440px --------------------*!*/
+/*@media only screen and (max-width: 1440px) {*/
+  /*.wrapper {*/
+    /*width: 1280px;*/
+    /*margin: 0 5.55%;*/
+  /*}*/
+
+  /*.header-logo_buttons {*/
+    /*width: auto;*/
+  /*}*/
+
+  /*.first-text {*/
+    /*height: 90px;*/
+  /*}*/
+
+  /*.sec-text {*/
+    /*margin-left: 216px;*/
+    /*width: 1070px;*/
+    /*height: 90px;*/
+  /*}*/
+
+  /*.menu {*/
+    /*height: 20px;*/
+    /*width: 570px;*/
+    /*margin: 30px 0 0 708px;*/
+  /*}*/
+
+  /*.menu__link {*/
+    /*font-size: 16px;*/
+  /*}*/
+
+  /*.header-wrap {*/
+    /*margin: 150px auto 0 auto;*/
+    /*width: 700px;*/
+  /*}*/
+
+  /*.text-collab__block p {*/
+    /*width: auto;*/
+    /*height: auto;*/
+  /*}*/
+
+  /*.football-player {*/
+    /*top: 1000px;*/
+    /*left: 100px;*/
+  /*}*/
+
+  /*.player-line {*/
+    /*left: 122px;*/
+  /*}*/
+
+  /*.basketball-player {*/
+    /*left: 550px;*/
+    /*right: 0;*/
+  /*}*/
+
+  /*.basket-2-line {*/
+    /*right: 355px;*/
+  /*}*/
+
+  /*.basket-players__block {*/
+    /*margin: 0;*/
+    /*width: 60%;*/
+  /*}*/
+
+  /*.basket-players__block h1 {*/
+    /*padding-left: 0;*/
+  /*}*/
+
+  /*.players-con {*/
+    /*padding-left: 0;*/
+  /*}*/
+
+  /*.basket-players__block p {*/
+    /*margin-left: 0;*/
+  /*}*/
+
+  /*.players-colab {*/
+    /*padding-left: 0;*/
+  /*}*/
+
+  /*.basket-collab__block p {*/
+    /*margin-left: 0;*/
+  /*}*/
+
+  /*.players-growth {*/
+    /*padding-left: 0;*/
+  /*}*/
+
+  /*.basket-growth__block p {*/
+    /*margin-left: 0;*/
+  /*}*/
+
+  /*.big-rect {*/
+    /*!*left: 44.225%;*!*/
+  /*}*/
+
+  /*.find {*/
+    /*width: auto;*/
+  /*}*/
+
+  /*.download-buttons {*/
+    /*margin: 150px auto;*/
+  /*}*/
+
+  /*.social-icons_block {*/
+    /*margin-left: 150px;*/
+  /*}*/
+/*}*/
+
+/*@media only screen and (max-width: 1439px) and (min-width: 1025px) {*/
+  /*.wrapper {*/
+    /*margin: 0 8%;*/
+    /*width: auto;*/
+  /*}*/
+
+  /*.header-logo_buttons {*/
+    /*width: auto;*/
+    /*height: auto;*/
+  /*}*/
+
+  /*.sec-text {*/
+    /*margin-left: 5%;*/
+    /*font-size: 70px;*/
+    /*text-align: left;*/
+  /*}*/
+
+  /*.menu {*/
+    /*margin-left: 30%;*/
+    /*width: 70%;*/
+  /*}*/
+
+  /*.football-player {*/
+    /*left: -5%;*/
+  /*}*/
+
+  /*.player-line {*/
+    /*left: -5%;*/
+  /*}*/
+
+  /*.basket-1-line {*/
+    /*display: none;*/
+  /*}*/
+
+  /*.text-beactive_block {*/
+    /*width: 70%;*/
+  /*}*/
+
+  /*.find {*/
+    /*padding-left: 25%;*/
+  /*}*/
+
+  /*.find_text {*/
+    /*width: 70%;*/
+    /*margin-left: 25%;*/
+  /*}*/
+
+  /*.text-big_block {*/
+    /*width: auto;*/
+    /*line-height: 1;*/
+    /*font-size: 72px;*/
+  /*}*/
+
+  /*.work {*/
+    /*width: 70%;*/
+  /*}*/
+
+  /*.nav_blocks {*/
+    /*margin-left: 7%;*/
+  /*}*/
+/*}*/
+
+/*!*------------------- MEDIA QUERY 1024px --------------------*!*/
+/*@media only screen and (max-width: 1024px) {*/
+  /*.wrapper {*/
+    /*width: 824px;*/
+    /*margin: 0 100px 0 100px;*/
+  /*}*/
+
+  /*.header-logo_buttons {*/
+    /*width: auto;*/
+  /*}*/
+
+  /*.first-text {*/
+    /*margin-top: 300px;*/
+    /*height: 64px;*/
+    /*width: 500px;*/
+    /*font-weight: 700;*/
+    /*font-size: 64px;*/
+    /*letter-spacing: 4.2px;*/
+    /*text-align: left;*/
+  /*}*/
+
+  /*.sec-text {*/
+    /*margin: 30px 0 0 30px;*/
+    /*width: 800px;*/
+    /*height: 64px;*/
+    /*font-size: 64px;*/
+    /*font-weight: 700;*/
+    /*text-align: right;*/
+    /*letter-spacing: 4.2px;*/
+  /*}*/
+
+  /*.menu {*/
+    /*margin: 30px 30px 0 30px;*/
+    /*width: 764px;*/
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+  /*}*/
+
+  /*.menu_first_block {*/
+    /*width: 400px;*/
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+  /*}*/
+
+  /*.menu_second_block {*/
+    /*width: 280px;*/
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+  /*}*/
+
+  /*.header-wrap {*/
+    /*margin: 150px auto 0 auto;*/
+    /*width: 672px;*/
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: space-between;*/
+  /*}*/
+
+  /*.big-rect {*/
+    /*!*position: absolute;*!*/
+    /*!*top: 3088px;*!*/
+    /*!*left: 425px;*!*/
+  /*}*/
+
+  /*.second-block {*/
+    /*position: absolute;*/
+    /*!*top: 3825px;*!*/
+    /*!*left: 425px;*!*/
+  /*}*/
+
+  /*.third-block {*/
+    /*position: absolute;*/
+    /*!*top: 210px;*!*/
+    /*!*left: 50vw;*!*/
+    /*!*top: 4560px;*!*/
+    /*!*left: 425px;*!*/
+  /*}*/
+
+  /*.football-player {*/
+    /*position: absolute;*/
+    /*left: -10%;*/
+  /*}*/
+
+  /*.player-line {*/
+    /*position: absolute;*/
+    /*left: -10%;*/
+  /*}*/
+
+  /*.text-athlets__block p {*/
+    /*height: auto;*/
+    /*width: 120%;*/
+  /*}*/
+
+  /*.text-collab__block p {*/
+    /*height: auto;*/
+    /*width: 120%;*/
+  /*}*/
+
+  /*.text-growth__block p {*/
+    /*height: auto;*/
+    /*width: 120%;*/
+  /*}*/
+
+  /*.basketball-player {*/
+    /*overflow: hidden;*/
+    /*position: absolute;*/
+  /*}*/
+
+  /*.basket-1-line {*/
+    /*display: none;*/
+  /*}*/
+
+  /*.basket-2-line {*/
+    /*position: absolute;*/
+    /*right: 0%;*/
+  /*}*/
+
+  /*.basket-players__block {*/
+    /*margin: 0;*/
+    /*width: 70%;*/
+  /*}*/
+
+  /*.basket-players__block h1 {*/
+    /*padding-left: 0;*/
+  /*}*/
+
+  /*.players-con {*/
+    /*padding-left: 0;*/
+  /*}*/
+
+  /*.basket-players__block p {*/
+    /*margin-left: 0;*/
+  /*}*/
+
+  /*.basket-2-collab__block {*/
+    /*width: 100%;*/
+  /*}*/
+
+  /*.basket-collab__block {*/
+    /*margin: 0;*/
+    /*width: 70%;*/
+  /*}*/
+
+  /*.players-colab {*/
+    /*padding-left: 0;*/
+  /*}*/
+
+  /*.basket-collab__block p {*/
+    /*margin-left: 0;*/
+  /*}*/
+
+  /*.basket-3-growth__block {*/
+    /*width: 100%;*/
+  /*}*/
+
+  /*.basket-growth__block {*/
+    /*margin: 0;*/
+    /*width: 70%;*/
+  /*}*/
+
+  /*.players-growth {*/
+    /*padding-left: 0;*/
+  /*}*/
+
+  /*.basket-growth__block p {*/
+    /*margin-left: 0;*/
+  /*}*/
+
+  /*.text-big_block {*/
+    /*font-size: 70px;*/
+  /*}*/
+
+  /*.text-beactive_block {*/
+    /*font-size: 18px;*/
+  /*}*/
+
+  /*.find {*/
+    /*padding-left: 60px;*/
+    /*width: 70%;*/
+  /*}*/
+
+  /*.find_text {*/
+    /*margin-left: 60px;*/
+    /*width: 60%;*/
+    /*font-size: 18px;*/
+  /*}*/
+
+  /*.work {*/
+    /*margin-left: 126px;*/
+    /*width: 70%;*/
+    /*font-size: 18px;*/
+  /*}*/
+
+  /*.nav_blocks {*/
+    /*margin-left: 0;*/
+  /*}*/
+
+  /*.download-buttons {*/
+    /*margin: 150px auto;*/
+  /*}*/
+
+  /*.social-icons_block {*/
+    /*margin-left: 130px;*/
+  /*}*/
+/*}*/
+
+/*!*------------------- MEDIA QUERY 768px --------------------*!*/
+/*@media only screen and (max-width: 768px) {*/
+  /*.wrapper {*/
+    /*width: 728px;*/
+    /*margin: 0 20px 0 20px;*/
+  /*}*/
+
+  /*.header-logo_buttons {*/
+    /*width: auto;*/
+  /*}*/
+
+  /*.first-text {*/
+    /*margin: 195px 0 0 70px;*/
+    /*width: 490px;*/
+    /*height: 45px;*/
+    /*font-size: 64px;*/
+    /*line-height: 31.32px;*/
+    /*letter-spacing: 3.52px;*/
+  /*}*/
+
+  /*.sec-text {*/
+    /*margin: 30px 0 0 177px;*/
+    /*width: 500px;*/
+    /*height: 122px;*/
+    /*font-size: 64px;*/
+    /*letter-spacing: 3.2px;*/
+    /*text-align: left;*/
+  /*}*/
+
+  /*.menu {*/
+    /*margin: 185px 30px 0 30px;*/
+    /*width: 666px;*/
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+  /*}*/
+
+  /*.menu_first_block {*/
+    /*width: 380px;*/
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+  /*}*/
+
+  /*.menu_second_block {*/
+    /*width: 210px;*/
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+  /*}*/
+
+  /*.header-wrap {*/
+    /*width: 652px;*/
+    /*margin: 115px auto 0 auto;*/
+  /*}*/
+
+  /*!*--1--*!*/
+  /*.football-player {*/
+    /*position: absolute;*/
+    /*top: 1053px;*/
+    /*left: -165px;*/
+    /*z-index: 5;*/
+  /*}*/
+
+  /*.player-line {*/
+    /*position: absolute;*/
+    /*top: 1075px;*/
+    /*left: -340px;*/
+  /*}*/
+
+  /*.first-connect__block {*/
+    /*height: 350px;*/
+    /*width: 768px;*/
+  /*}*/
+
+  /*.text-athlets__block {*/
+    /*height: 350px;*/
+    /*margin-left: 42.6%;*/
+  /*}*/
+
+  /*.text-athlets__block p {*/
+    /*width: 95%;*/
+    /*font-size: 18px;*/
+    /*letter-spacing: 0.9px;*/
+  /*}*/
+
+  /*h1 {*/
+    /*padding-top: 80px;*/
+  /*}*/
+
+  /*.numbers-block {*/
+    /*margin: 60px 0 0 0;*/
+  /*}*/
+
+  /*.sec-collab__block {*/
+    /*height: 235px;*/
+  /*}*/
+
+  /*.text-collab__block {*/
+    /*margin-left: 42.6%;*/
+    /*height: 235px;*/
+  /*}*/
+
+  /*.text-collab__block p {*/
+    /*letter-spacing: 0.9px;*/
+    /*font-size: 18px;*/
+    /*width: 95%;*/
+  /*}*/
+
+  /*.football-player > img {*/
+    /*height: 700px;*/
+    /*width: 500px;*/
+  /*}*/
+
+  /*.numbers-block-1 {*/
+    /*padding: 40px 0 0 0;*/
+  /*}*/
+
+  /*.third-growth__block {*/
+    /*height: 205px;*/
+  /*}*/
+
+  /*.text-growth__block {*/
+    /*margin-left: 42.6%;*/
+    /*height: 205px;*/
+  /*}*/
+
+  /*.text-growth__block p {*/
+    /*margin: 30px 0 0 0;*/
+    /*width: 422px;*/
+    /*height: 71px;*/
+    /*font-size: 18px;*/
+    /*letter-spacing: 0.9px;*/
+  /*}*/
+
+  /*!*--basket--*!*/
+  /*.basket-1-line {*/
+    /*display: none;*/
+  /*}*/
+
+  /*.basket-2-line {*/
+    /*position: absolute;*/
+    /*top: 1950px;*/
+    /*right: 0px;*/
+  /*}*/
+
+  /*.basketball-player {*/
+    /*position: absolute;*/
+    /*top: 1780px;*/
+    /*right: 0;*/
+    /*left: 310px;*/
+  /*}*/
+
+  /*.basketball-player > img {*/
+    /*width: 690px;*/
+    /*height: 565px;*/
+  /*}*/
+
+  /*.basket-1-con__block {*/
+    /*width: 100%;*/
+    /*height: 350px;*/
+  /*}*/
+
+  /*.basket-players__block {*/
+    /*width: 380px;*/
+    /*height: 350px;*/
+  /*}*/
+
+  /*.basket-players__block h1 {*/
+    /*padding: 80px 0 0 20px;*/
+  /*}*/
+
+  /*.players-con {*/
+    /*padding: 60px 0 0 13px;*/
+    /*width: 280px;*/
+  /*}*/
+
+  /*.basket-players__block p {*/
+    /*margin: 32px 0 0 13px;*/
+    /*width: 370px;*/
+    /*font-size: 18px;*/
+    /*letter-spacing: 0.9px;*/
+  /*}*/
+
+  /*!*--2--*!*/
+  /*.basket-2-collab__block {*/
+    /*width: 768px;*/
+    /*height: 235px;*/
+  /*}*/
+
+  /*.basket-collab__block {*/
+    /*height: 235px;*/
+  /*}*/
+
+  /*.players-colab {*/
+    /*padding: 63px 0 0 13px;*/
+  /*}*/
+
+  /*.basket-collab__block p {*/
+    /*width: 413px;*/
+    /*margin: 41px 0 0 13px;*/
+    /*font-size: 18px;*/
+    /*letter-spacing: 0.9px;*/
+  /*}*/
+
+  /*!*--3--*!*/
+  /*.basket-3-growth__block {*/
+    /*width: 768px;*/
+    /*height: 205px;*/
+  /*}*/
+
+  /*.basket-growth__block {*/
+    /*height: 205px;*/
+  /*}*/
+
+  /*.players-growth {*/
+    /*padding: 52px 0 0 13px;*/
+  /*}*/
+
+  /*.basket-growth__block p {*/
+    /*margin: 31px 0 0 13px;*/
+    /*font-size: 18px;*/
+    /*width: 400px;*/
+    /*letter-spacing: 0.9px;*/
+  /*}*/
+
+  /*.bridge-01-block {*/
+    /*height: 921px;*/
+    /*width: 100vw;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+  /*}*/
+
+  /*.bridge-person-block {*/
+    /*height: 584px;*/
+    /*width: 100vw;*/
+  /*}*/
+
+  /*.bridge-person-block > img {*/
+    /*height: 584px;*/
+    /*width: 100%;*/
+  /*}*/
+
+  /*.text_block {*/
+    /*height: 337px;*/
+    /*width: 100vw;*/
+  /*}*/
+
+  /*.text-big_block {*/
+    /*padding: 87px 0 0 35px;*/
+    /*width: 445px;*/
+  /*}*/
+
+  /*.text-beactive_block {*/
+    /*margin: 36px 0 0 35px;*/
+    /*width: 655px;*/
+    /*font-size: 24px;*/
+  /*}*/
+
+  /*.couch-02__block {*/
+    /*height: 918px;*/
+    /*width: 100vw;*/
+    /*display: flex;*/
+    /*flex-direction: column-reverse;*/
+  /*}*/
+
+  /*.couch-pict {*/
+    /*height: 584px;*/
+    /*width: 100vw;*/
+    /*margin: 0;*/
+  /*}*/
+
+  /*.couch-pict > img {*/
+    /*width: 100%;*/
+    /*height: 584px;*/
+  /*}*/
+
+  /*.find {*/
+    /*padding: 77px 0 0 35px;*/
+    /*width: 670px;*/
+  /*}*/
+
+  /*.find_text {*/
+    /*margin: 36px 0 0 35px;*/
+    /*width: 605px;*/
+    /*height: 50px;*/
+    /*font-size: 24px;*/
+  /*}*/
+
+  /*.winners_block {*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*height: 921px;*/
+  /*}*/
+
+  /*.winners-image {*/
+    /*height: 584px;*/
+    /*width: 100vw;*/
+  /*}*/
+
+  /*.winners-image > img {*/
+    /*width: 100%;*/
+    /*height: 584px;*/
+  /*}*/
+
+  /*.work {*/
+    /*margin: 37px 0 0 35px;*/
+    /*width: 660px;*/
+    /*height: 50px;*/
+    /*font-size: 24px;*/
+  /*}*/
+
+  /*.footer {*/
+    /*height: 956px;*/
+    /*width: 100vw;*/
+  /*}*/
+
+  /*.footer-up_block {*/
+    /*height: 864px;*/
+    /*width: 100vw;*/
+  /*}*/
+
+  /*.footer-down_block {*/
+    /*height: 92px;*/
+  /*}*/
+
+  /*.footer-nav_blocks {*/
+    /*padding: 35px 0 0 0;*/
+    /*display: block;*/
+    /*margin-left: 294px;*/
+  /*}*/
+
+  /*.footer-logo_block {*/
+    /*display: none;*/
+  /*}*/
+
+  /*table {*/
+    /*display: none;*/
+  /*}*/
+
+  /*.nav_blocks {*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*padding: 128px 0 0 0;*/
+    /*margin-left: 26px;*/
+  /*}*/
+
+  /*.footer-text_block {*/
+    /*padding: 82px 0 0 0;*/
+  /*}*/
+
+  /*.footer-first-text {*/
+    /*font-size: 80px;*/
+    /*width: 680px;*/
+    /*height: 56px;*/
+    /*letter-spacing: 4.85px;*/
+  /*}*/
+
+  /*.footer-sec-text {*/
+    /*padding: 31px 0 0 11px;*/
+    /*height: 46px;*/
+  /*}*/
+
+  /*.button {*/
+    /*margin-left: 279px;*/
+  /*}*/
+
+  /*.download-buttons {*/
+    /*margin: 198px 0 0 38px;*/
+    /*width: 652px;*/
+  /*}*/
+
+  /*.big-rect {*/
+    /*!*position: absolute;*!*/
+    /*!*top: 3040px;*!*/
+    /*!*left: 33px;*!*/
+    /*width: 116px;*/
+    /*height: 116px;*/
+  /*}*/
+
+  /*.third-block {*/
+    /*position: absolute;*/
+    /*!*top: 4875px;*!*/
+    /*!*left: 33px;*!*/
+  /*}*/
+
+  /*.rect-small-block {*/
+    /*padding: 43px 43px 41px 44px;*/
+  /*}*/
+
+  /*.second-block {*/
+    /*position: absolute;*/
+    /*!*top: 3957px;*!*/
+    /*!*left: 33px;*!*/
+  /*}*/
+
+  /*.social-icons_block {*/
+    /*margin-left: 0;*/
+  /*}*/
+/*}*/
+
+/*!*------------------- MEDIA QUERY 425px --------------------*!*/
+/*@media only screen and (max-width: 425px) {*/
+  /*.header {*/
+    /*height: 660px;*/
+  /*}*/
+
+  /*.banner {*/
+    /*height: 660px;*/
+  /*}*/
+
+  /*.wrapper {*/
+    /*width: 395px;*/
+    /*margin: 0 15px 0 15px;*/
+  /*}*/
+
+  /*.header-logo_buttons {*/
+    /*width: 190px;*/
+    /*padding-top: 40px;*/
+  /*}*/
+
+  /*.for-athlets {*/
+    /*display: none;*/
+  /*}*/
+
+  /*.first-text {*/
+    /*margin: 140px 0 0 0;*/
+    /*width: 350px;*/
+    /*font-size: 48px;*/
+    /*line-height: 61.32px;*/
+    /*letter-spacing: 1.76px;*/
+  /*}*/
+
+  /*.sec-text {*/
+    /*margin: 28px 0 0 35px;*/
+    /*width: 350px;*/
+    /*height: 120px;*/
+    /*font-size: 48px;*/
+    /*letter-spacing: 1.6px;*/
+  /*}*/
+
+  /*.menu {*/
+    /*margin: 45px 25px 0 25px;*/
+    /*width: 345px;*/
+    /*height: 40px;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: space-between;*/
+  /*}*/
+
+  /*.menu__link {*/
+    /*font-size: 14px;*/
+  /*}*/
+
+  /*.menu_first_block {*/
+    /*width: 345px;*/
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+  /*}*/
+
+  /*.menu_second_block {*/
+    /*width: 345px;*/
+    /*display: flex;*/
+    /*justify-content: space-around;*/
+  /*}*/
+
+  /*.header-wrap {*/
+    /*width: 345px;*/
+    /*height: 40px;*/
+    /*margin: 85px auto 0 auto;*/
+  /*}*/
+
+  /*.left-btn {*/
+    /*width: 165px;*/
+    /*height: 40px;*/
+    /*border-radius: 35px;*/
+    /*background-color: #5e42b0;*/
+    /*display: flex;*/
+    /*justify-content: flex-start;*/
+    /*transition: 0.5s;*/
+  /*}*/
+
+  /*.left-btn:hover {*/
+    /*box-shadow: 0 10px 16px #0a0e34;*/
+    /*cursor: pointer;*/
+  /*}*/
+
+  /*.right-btn:hover {*/
+    /*box-shadow: 0 10px 16px #0a0e34;*/
+    /*cursor: pointer;*/
+  /*}*/
+
+  /*.apple {*/
+    /*width: 15px;*/
+    /*height: 17px;*/
+    /*margin: 11px 10px 11px 20px;*/
+  /*}*/
+
+  /*.apple_text {*/
+    /*padding: 11px 0 0 0;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: flex-start;*/
+    /*align-items: flex-start;*/
+  /*}*/
+
+  /*.first_apple_text {*/
+    /*font-size: 10px;*/
+    /*letter-spacing: 0.4px;*/
+  /*}*/
+
+  /*.second_apple_text {*/
+    /*font-size: 10px;*/
+    /*line-height: 1.03;*/
+    /*letter-spacing: 0.4px;*/
+  /*}*/
+
+  /*.right-btn {*/
+    /*width: 160px;*/
+    /*height: 40px;*/
+  /*}*/
+
+  /*.google {*/
+    /*margin: 10px 8px 11px 30px;*/
+    /*height: 18px;*/
+    /*width: 16px;*/
+  /*}*/
+
+  /*.google_text {*/
+    /*padding: 10px 0 0 0;*/
+  /*}*/
+
+  /*.first_google_text {*/
+    /*font-size: 10px;*/
+    /*letter-spacing: 0.4px;*/
+  /*}*/
+
+  /*.sec_google_text {*/
+    /*font-size: 10px;*/
+    /*letter-spacing: 0.4px;*/
+  /*}*/
+
+  /*.basket-3-growth__block {*/
+    /*width: 100%;*/
+  /*}*/
+
+  /*h1 {*/
+    /*font-size: 50px;*/
+  /*}*/
+
+  /*.numbers-block {*/
+    /*margin-top: 40px;*/
+    /*font-size: 20px;*/
+    /*width: 80%;*/
+  /*}*/
+
+  /*.text-athlets__block h2 {*/
+    /*height: auto;*/
+    /*font-size: 26px;*/
+  /*}*/
+
+  /*.text-athlets__block p {*/
+    /*width: 100%;*/
+    /*font-size: 16px;*/
+  /*}*/
+
+  /*.numbers-block-1 {*/
+    /*width: 80%;*/
+    /*font-size: 20px;*/
+  /*}*/
+
+  /*.text-collab__block h2 {*/
+    /*font-size: 26px;*/
+    /*letter-spacing: 0;*/
+  /*}*/
+
+  /*.text-collab__block p {*/
+    /*margin-top: 21px;*/
+    /*width: 100%;*/
+    /*font-size: 16px;*/
+    /*line-height: 1.2;*/
+    /*letter-spacing: 0.8px;*/
+  /*}*/
+
+  /*.growth {*/
+    /*width: 65%;*/
+  /*}*/
+
+  /*.text-growth__block h2 {*/
+    /*font-size: 26px;*/
+  /*}*/
+
+  /*.text-growth__block p {*/
+    /*height: auto;*/
+    /*font-size: 16px;*/
+    /*width: 100%;*/
+  /*}*/
+
+  /*.football-player {*/
+    /*top: 643px;*/
+    /*left: -247px;*/
+  /*}*/
+
+  /*.player-line {*/
+    /*top: 675px;*/
+    /*left: -410px;*/
+  /*}*/
+
+  /*.first-connect__block {*/
+    /*height: 300px;*/
+  /*}*/
+
+  /*.basket-1-con__block {*/
+    /*width: 100%;*/
+  /*}*/
+
+  /*.basket-players__block {*/
+    /*width: 70%;*/
+  /*}*/
+
+  /*.basket-players__block h1 {*/
+    /*padding-left: 13px;*/
+  /*}*/
+
+  /*.players-con h2 {*/
+    /*height: auto;*/
+    /*font-size: 26px;*/
+  /*}*/
+
+  /*.basket-players__block p {*/
+    /*width: 100%;*/
+    /*font-size: 16px;*/
+  /*}*/
+
+  /*.basket-collab__block {*/
+    /*width: 70%;*/
+  /*}*/
+
+  /*.players-colab h2 {*/
+    /*height: auto;*/
+    /*font-size: 26px;*/
+  /*}*/
+
+  /*.basket-collab__block p {*/
+    /*width: 100%;*/
+    /*font-size: 16px;*/
+  /*}*/
+
+  /*.players-growth {*/
+    /*width: 50%;*/
+  /*}*/
+
+  /*.players-growth h2 {*/
+    /*height: auto;*/
+    /*font-size: 26px;*/
+  /*}*/
+
+  /*.basket-growth__block p {*/
+    /*width: 100%;*/
+    /*font-size: 16px;*/
+  /*}*/
+
+  /*.basketball-player {*/
+    /*top: 1360px;*/
+    /*right: 0;*/
+    /*left: 180px;*/
+  /*}*/
+
+  /*.basket-2-line {*/
+    /*overflow: hidden;*/
+    /*top: 1590px;*/
+    /*right: 0;*/
+    /*left: 290px;*/
+  /*}*/
+
+  /*.text-beactive_block {*/
+    /*width: 90%;*/
+    /*font-size: 22px;*/
+  /*}*/
+
+  /*.basket-2-collab__block {*/
+    /*width: 100%;*/
+  /*}*/
+
+  /*.text-big_block {*/
+    /*width: 90%;*/
+  /*}*/
+
+  /*.big-rect {*/
+    /*!*top: 2680px;*!*/
+  /*}*/
+
+  /*.find {*/
+    /*width: 90%;*/
+  /*}*/
+
+  /*.find_text {*/
+    /*width: 90%;*/
+    /*font-size: 22px;*/
+  /*}*/
+
+  /*.work {*/
+    /*width: 90%;*/
+    /*font-size: 22px;*/
+    /*height: auto;*/
+  /*}*/
+
+  /*.second-block {*/
+    /*!*top: 3597px;*!*/
+  /*}*/
+
+  /*.third-block {*/
+    /*!*top: 4515px;*!*/
+  /*}*/
+
+  /*.nav_blocks {*/
+    /*margin-left: 0;*/
+  /*}*/
+
+  /*.button {*/
+    /*margin: 0 auto;*/
+    /*width: 93px;*/
+    /*height: 98px;*/
+  /*}*/
+
+  /*.button > img {*/
+    /*width: 93px;*/
+    /*height: 98px;*/
+  /*}*/
+
+  /*.footer-text_block {*/
+    /*padding: 57px 0 0 5px;*/
+  /*}*/
+
+  /*.footer-first-text {*/
+    /*font-size: 46px;*/
+    /*height: auto;*/
+    /*width: 100%;*/
+    /*letter-spacing: 1.7px;*/
+  /*}*/
+
+  /*.footer-sec-text {*/
+    /*padding-top: 21px;*/
+    /*font-size: 20px;*/
+    /*height: auto;*/
+    /*width: 100%;*/
+  /*}*/
+
+  /*.download-buttons {*/
+    /*width: 100%;*/
+    /*margin: 200px auto;*/
+  /*}*/
+
+  /*.footer {*/
+    /*height: 836px;*/
+  /*}*/
+
+  /*.footer-up_block {*/
+    /*height: 744px;*/
+  /*}*/
+
+  /*.footer-nav_blocks {*/
+    /*margin: 0 auto;*/
+    /*width: 80%;*/
+  /*}*/
+
+  /*.social-icons_block {*/
+    /*width: 100%;*/
+    /*margin-left: 0;*/
+  /*}*/
+/*}*/
+
+/*!*------------------- MEDIA QUERY 375px --------------------*!*/
+/*@media screen and (max-width: 375px) {*/
+  /*.banner {*/
+    /*height: 568px;*/
+  /*}*/
+
+  /*.header {*/
+    /*height: 568px;*/
+  /*}*/
+
+  /*.wrapper {*/
+    /*width: 345px;*/
+    /*margin: 0 15px 0 15px;*/
+  /*}*/
+
+  /*.header-logo_buttons {*/
+    /*width: 190px;*/
+    /*padding-top: 40px;*/
+    /*margin: 0 auto 0 auto;*/
+  /*}*/
+
+  /*.for-athlets {*/
+    /*display: none;*/
+  /*}*/
+
+  /*.first-text {*/
+    /*margin: 140px 0 0 0;*/
+    /*width: 245px;*/
+    /*height: 23px;*/
+    /*font-size: 32px;*/
+    /*line-height: 31.32px;*/
+    /*letter-spacing: 1.76px;*/
+  /*}*/
+
+  /*.sec-text {*/
+    /*margin: 28px 0 0 55px;*/
+    /*width: 250px;*/
+    /*height: 61px;*/
+    /*font-size: 32px;*/
+    /*letter-spacing: 1.6px;*/
+  /*}*/
+
+  /*.menu {*/
+    /*margin: 45px 0 0 0;*/
+    /*width: 345px;*/
+    /*height: 40px;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: space-between;*/
+  /*}*/
+
+  /*.menu__link {*/
+    /*font-size: 14px;*/
+  /*}*/
+
+  /*.menu_first_block {*/
+    /*width: 345px;*/
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+  /*}*/
+
+  /*.menu_second_block {*/
+    /*width: 345px;*/
+    /*display: flex;*/
+    /*justify-content: space-around;*/
+  /*}*/
+
+  /*.header-wrap {*/
+    /*width: 345px;*/
+    /*height: 40px;*/
+    /*margin: 85px 0 0 0;*/
+  /*}*/
+
+  /*.left-btn {*/
+    /*width: 165px;*/
+    /*height: 40px;*/
+    /*border-radius: 35px;*/
+    /*background-color: #5e42b0;*/
+    /*!*display: flex;*!*/
+    /*!*justify-content: flex-start;*!*/
+    /*transition: 0.5s;*/
+    /*border: none;*/
+    /*outline: none;*/
+    /*box-sizing: border-box;*/
+  /*}*/
+
+  /*.left-btn:hover {*/
+    /*box-shadow: 0 10px 16px #0a0e34;*/
+    /*cursor: pointer;*/
+  /*}*/
+
+  /*.right-btn:hover {*/
+    /*box-shadow: 0 10px 16px #0a0e34;*/
+    /*cursor: pointer;*/
+  /*}*/
+
+  /*.apple {*/
+    /*!*margin: 11px 10px 11px 20px;*!*/
+  /*}*/
+
+  /*.apple_text {*/
+    /*padding: 11px 0 0 0;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: flex-start;*/
+    /*align-items: flex-start;*/
+  /*}*/
+
+  /*.first_apple_text {*/
+    /*font-size: 10px;*/
+    /*letter-spacing: 0.4px;*/
+  /*}*/
+
+  /*.second_apple_text {*/
+    /*font-size: 10px;*/
+    /*line-height: 1.03;*/
+    /*letter-spacing: 0.4px;*/
+  /*}*/
+
+  /*.right-btn {*/
+    /*width: 160px;*/
+    /*height: 40px;*/
+  /*}*/
+
+  /*.google {*/
+    /*margin: 10px 8px 11px 30px;*/
+    /*height: 18px;*/
+    /*width: 16px;*/
+  /*}*/
+
+  /*.google_text {*/
+    /*padding: 10px 0 0 0;*/
+  /*}*/
+
+  /*.first_google_text {*/
+    /*font-size: 10px;*/
+    /*letter-spacing: 0.4px;*/
+  /*}*/
+
+  /*.sec_google_text {*/
+    /*font-size: 10px;*/
+    /*letter-spacing: 0.4px;*/
+  /*}*/
+
+  /*.football-player {*/
+    /*top: 553px;*/
+    /*left: -265px;*/
+  /*}*/
+
+  /*.player-line {*/
+    /*top: 585px;*/
+    /*left: -460px;*/
+  /*}*/
+
+  /*h1 {*/
+    /*font-size: 50px;*/
+  /*}*/
+
+  /*.sec-collab__block {*/
+    /*height: 255px;*/
+  /*}*/
+
+  /*.numbers-block {*/
+    /*margin: 50px 0 0 0;*/
+    /*width: 100%;*/
+    /*font-size: 18px;*/
+  /*}*/
+
+  /*.text-athlets__block h2 {*/
+    /*height: 30px;*/
+    /*font-size: 22px;*/
+    /*width: 190px;*/
+    /*letter-spacing: 0px;*/
+  /*}*/
+
+  /*.text-athlets__block p {*/
+    /*font-size: 16px;*/
+    /*letter-spacing: 0.75px;*/
+    /*width: 98%;*/
+  /*}*/
+
+  /*.numbers-block-1 {*/
+    /*padding: 30px 0 0 0;*/
+    /*width: 75%;*/
+    /*font-size: 16px;*/
+  /*}*/
+
+  /*.text-collab__block h2 {*/
+    /*height: 30px;*/
+    /*width: 190px;*/
+    /*letter-spacing: 0px;*/
+    /*font-size: 22px;*/
+  /*}*/
+
+  /*.text-collab__block p {*/
+    /*margin: 15px 0 0 0;*/
+    /*font-size: 16px;*/
+    /*letter-spacing: 0px;*/
+    /*width: 100%;*/
+    /*line-height: 1.3;*/
+  /*}*/
+
+  /*.growth {*/
+    /*width: 138px;*/
+  /*}*/
+
+  /*.text-growth__block h2 {*/
+    /*font-size: 1.5em;*/
+  /*}*/
+
+  /*.text-growth__block p {*/
+    /*font-size: 16px;*/
+    /*letter-spacing: 0px;*/
+    /*width: 100%;*/
+  /*}*/
+
+  /*.basket-1-con__block {*/
+    /*width: 100%;*/
+    /*height: 290px;*/
+  /*}*/
+
+  /*.basket-players__block {*/
+    /*width: 100%;*/
+    /*height: 350px;*/
+  /*}*/
+
+  /*.basket-2-line {*/
+    /*display: none;*/
+  /*}*/
+
+  /*.basket-1-line {*/
+    /*display: none;*/
+  /*}*/
+
+  /*.basket-players__block {*/
+    /*width: 70%;*/
+  /*}*/
+
+  /*.basket-players__block h1 {*/
+    /*padding: 60px 0 0 0;*/
+  /*}*/
+
+  /*.players-con h2 {*/
+    /*font-size: 22px;*/
+  /*}*/
+
+  /*.basket-players__block p {*/
+    /*margin-left: 0;*/
+    /*width: 100%;*/
+    /*font-size: 16px;*/
+  /*}*/
+
+  /*.players-colab {*/
+    /*padding-left: 0;*/
+    /*width: 75%;*/
+  /*}*/
+
+  /*.players-colab h2 {*/
+    /*font-size: 22px;*/
+  /*}*/
+
+  /*.basket-collab__block p {*/
+    /*width: 100%;*/
+    /*margin-left: 0;*/
+    /*font-size: 16px;*/
+  /*}*/
+
+  /*.basket-2-collab__block {*/
+    /*width: 100%;*/
+    /*height: 195px;*/
+  /*}*/
+
+  /*.dots_block {*/
+    /*display: none;*/
+  /*}*/
+
+  /*.players-growth h2 {*/
+    /*font-size: 22px;*/
+  /*}*/
+
+  /*.players-growth {*/
+    /*width: 55%;*/
+  /*}*/
+
+  /*.basket-growth__block p {*/
+    /*margin-left: 0;*/
+    /*font-size: 16px;*/
+    /*width: 100%;*/
+  /*}*/
+
+  /*.basketball-player {*/
+    /*top: 1350px;*/
+    /*right: 0;*/
+    /*left: 190px;*/
+  /*}*/
+
+  /*.text-big_block {*/
+    /*padding-left: 15px;*/
+    /*width: 100%;*/
+  /*}*/
+
+  /*.text-beactive_block {*/
+    /*margin: 36px 25px;*/
+    /*width: 90%;*/
+    /*font-size: 18px;*/
+  /*}*/
+
+  /*.big-rect {*/
+    /*!*top: 2510px;*!*/
+  /*}*/
+
+  /*.second-block {*/
+    /*!*top: 3427px;*!*/
+  /*}*/
+
+  /*.third-block {*/
+    /*!*top: 4350px;*!*/
+  /*}*/
+
+  /*.find {*/
+    /*width: 95%;*/
+  /*}*/
+
+  /*.find_text {*/
+    /*margin: 36px 25px;*/
+    /*width: 90%;*/
+    /*font-size: 18px;*/
+  /*}*/
+
+  /*.work {*/
+    /*margin: 36px 25px;*/
+    /*width: 90%;*/
+    /*font-size: 18px;*/
+  /*}*/
+
+  /*.nav_blocks {*/
+    /*margin-left: 0;*/
+  /*}*/
+
+  /*.button {*/
+    /*width: 93px;*/
+    /*height: 98px;*/
+    /*margin: 0 auto;*/
+  /*}*/
+
+  /*.button > img {*/
+    /*width: 93px;*/
+    /*height: 98px;*/
+  /*}*/
+
+  /*.footer-text_block {*/
+    /*padding: 57px 0 0 5px;*/
+  /*}*/
+
+  /*.footer-first-text {*/
+    /*font-size: 36px;*/
+    /*height: 26px;*/
+    /*width: 100%;*/
+    /*letter-spacing: 1.7px;*/
+  /*}*/
+
+  /*.footer-sec-text {*/
+    /*padding-top: 21px;*/
+    /*font-size: 20px;*/
+    /*height: 24px;*/
+    /*width: 100%;*/
+  /*}*/
+
+  /*.download-buttons {*/
+    /*width: 100%;*/
+    /*margin: 128px 0;*/
+  /*}*/
+
+  /*.footer {*/
+    /*height: 756px;*/
+  /*}*/
+
+  /*.footer-up_block {*/
+    /*height: 664px;*/
+  /*}*/
+
+  /*.footer-down_block {*/
+    /*width: 100%;*/
+  /*}*/
+
+  /*.footer-nav_blocks {*/
+    /*width: 100%;*/
+    /*padding: 35px 0 0 0;*/
+    /*display: block;*/
+    /*margin-left: 0;*/
+  /*}*/
+
+  /*.social-icons_block {*/
+    /*justify-content: space-around;*/
+    /*width: 100%;*/
+    /*margin-left: 0;*/
+  /*}*/
+/*}*/
+
+/*!*------------------- MEDIA QUERY (375 - 320)px --------------------*!*/
+/*@media only screen and (max-width: 374px) and (min-width: 320px) {*/
+  /*.wrapper {*/
+    /*width: 92%;*/
+    /*margin: 0 auto;*/
+  /*}*/
+
+  /*.menu {*/
+    /*width: 100%;*/
+  /*}*/
+
+  /*.menu_first_block {*/
+    /*width: 100%;*/
+  /*}*/
+
+  /*.menu_second_block {*/
+    /*width: 100%;*/
+  /*}*/
+
+  /*.header-wrap {*/
+    /*width: 100%;*/
+  /*}*/
+
+  /*.first-connect__block {*/
+    /*width: 100%;*/
+  /*}*/
+
+  /*.sec-collab__block {*/
+    /*width: 100%;*/
+  /*}*/
+
+  /*.third-growth__block {*/
+    /*width: 100%;*/
+  /*}*/
+
+  /*.text-athlets__block {*/
+    /*margin-left: 34%;*/
+  /*}*/
+
+  /*.text-athlets__block p {*/
+    /*width: 100%;*/
+  /*}*/
+
+  /*.text-collab__block {*/
+    /*margin-left: 34%;*/
+  /*}*/
+
+  /*.numbers-block-1 {*/
+    /*width: 60%;*/
+  /*}*/
+
+  /*.text-growth__block {*/
+    /*margin-left: 34%;*/
+  /*}*/
+
+  /*.text-growth__block p {*/
+    /*height: auto;*/
+  /*}*/
+
+  /*.football-player {*/
+    /*transform: translateX(-85%);*/
+    /*left: 0;*/
+    /*right: 0;*/
+  /*}*/
+
+  /*.basketball-player {*/
+    /*transform: translateX(70%);*/
+    /*left: 0;*/
+    /*right: 0;*/
+  /*}*/
+
+  /*.footer-first-text {*/
+    /*letter-spacing: 1px;*/
+  /*}*/
+/*}*/
+
+/*!*------------------- MEDIA QUERY 320px --------------------*!*/
+/*@media only screen and (max-width: 320px) {*/
+  /*.banner {*/
+    /*height: 568px;*/
+  /*}*/
+
+  /*.wrapper {*/
+    /*!*height: 200px;*!*/
+    /*width: 292px;*/
+    /*margin: 0 auto;*/
+  /*}*/
+
+  /*header {*/
+    /*height: 568px !important;*/
+  /*}*/
+
+  /*.header-logo_buttons {*/
+    /*width: 190px;*/
+    /*padding-top: 40px;*/
+    /*margin: 0 auto 0 auto;*/
+  /*}*/
+
+  /*.for-athlets {*/
+    /*display: none;*/
+  /*}*/
+
+  /*.first-text {*/
+    /*margin: 140px 0 0 0;*/
+    /*width: 245px;*/
+    /*height: 23px;*/
+    /*font-size: 32px;*/
+    /*line-height: 31.32px;*/
+    /*letter-spacing: 1.76px;*/
+  /*}*/
+
+  /*.sec-text {*/
+    /*margin: 28px 0 0 55px;*/
+    /*width: 250px;*/
+    /*height: 61px;*/
+    /*font-size: 32px;*/
+    /*letter-spacing: 1.6px;*/
+  /*}*/
+
+  /*.menu {*/
+    /*margin: 45px 21px 0 21px;*/
+    /*width: 250px;*/
+    /*height: 40px;*/
+    /*font-size: 12px;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: space-between;*/
+  /*}*/
+
+  /*.menu__link {*/
+    /*font-size: 12px;*/
+  /*}*/
+
+  /*.menu_first_block {*/
+    /*width: 250px;*/
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+  /*}*/
+
+  /*.menu_second_block {*/
+    /*width: 250px;*/
+    /*display: flex;*/
+    /*justify-content: space-around;*/
+  /*}*/
+
+  /*.header-wrap {*/
+    /*width: 292px;*/
+    /*height: 40px;*/
+    /*margin: 85px 0 0 0;*/
+  /*}*/
+
+  /*.left-btn {*/
+    /*width: 142px;*/
+    /*height: 40px;*/
+    /*border-radius: 35px;*/
+    /*background-color: #5e42b0;*/
+    /*display: flex;*/
+    /*justify-content: flex-start;*/
+    /*transition: 0.5s;*/
+  /*}*/
+
+  /*.left-btn:hover {*/
+    /*box-shadow: 0 10px 16px #0a0e34;*/
+    /*cursor: pointer;*/
+  /*}*/
+
+  /*.right-btn:hover {*/
+    /*box-shadow: 0 10px 16px #0a0e34;*/
+    /*cursor: pointer;*/
+  /*}*/
+
+  /*.apple {*/
+    /*width: 15px;*/
+    /*height: 17px;*/
+    /*margin: 11px 10px 11px 20px;*/
+  /*}*/
+
+  /*.apple_text {*/
+    /*padding: 11px 0 0 0;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: flex-start;*/
+    /*align-items: flex-start;*/
+  /*}*/
+
+  /*.first_apple_text {*/
+    /*font-size: 8px;*/
+    /*letter-spacing: 0.4px;*/
+  /*}*/
+
+  /*.second_apple_text {*/
+    /*font-size: 8px;*/
+    /*line-height: 1.03;*/
+    /*letter-spacing: 0.4px;*/
+  /*}*/
+
+  /*.right-btn {*/
+    /*width: 142px;*/
+    /*height: 40px;*/
+  /*}*/
+
+  /*.google {*/
+    /*margin: 10px 8px 11px 30px;*/
+    /*height: 18px;*/
+    /*width: 16px;*/
+  /*}*/
+
+  /*.google_text {*/
+    /*padding: 10px 0 0 0;*/
+  /*}*/
+
+  /*.first_google_text {*/
+    /*font-size: 8px;*/
+    /*letter-spacing: 0.4px;*/
+  /*}*/
+
+  /*.sec_google_text {*/
+    /*font-size: 8px;*/
+    /*letter-spacing: 0.4px;*/
+  /*}*/
+
+  /*!*--section--*!*/
+  /*.first-connect__block {*/
+    /*height: 306px;*/
+    /*width: 100%;*/
+  /*}*/
+
+  /*.text-athlets__block {*/
+    /*height: 200px;*/
+    /*margin: 0;*/
+    /*padding-left: 6px;*/
+  /*}*/
+
+  /*.text-athlets__block h2 {*/
+    /*height: 20px;*/
+    /*font-size: 28px;*/
+    /*letter-spacing: 1.4px;*/
+  /*}*/
+
+  /*.text-athlets__block p {*/
+    /*display: none;*/
+    /*font-size: 15px;*/
+    /*letter-spacing: 0.75px;*/
+    /*width: 92%;*/
+    /*line-height: 20px;*/
+  /*}*/
+
+  /*h1 {*/
+    /*padding: 25px 0 0 0;*/
+  /*}*/
+
+  /*.football-player {*/
+    /*transform: none;*/
+    /*position: absolute;*/
+    /*top: 650px;*/
+    /*left: 64px;*/
+    /*right: 64px;*/
+  /*}*/
+
+  /*.football-player > img {*/
+    /*display: block;*/
+    /*height: 281px;*/
+    /*width: 192px;*/
+  /*}*/
+
+  /*.player-line {*/
+    /*display: block;*/
+    /*top: 660px;*/
+    /*left: 65px;*/
+    /*right: 71px;*/
+  /*}*/
+
+  /*.player-line > img {*/
+    /*height: 200px;*/
+    /*width: 185px;*/
+  /*}*/
+
+  /*.numbers-block {*/
+    /*display: none;*/
+    /*margin: 30px 0 0 0;*/
+    /*font-size: 14px;*/
+    /*width: 220px;*/
+  /*}*/
+
+  /*.rect-1 {*/
+    /*height: 18px;*/
+    /*width: 16px;*/
+    /*border-bottom: 4px solid rgb(94, 66, 176);*/
+  /*}*/
+
+  /*.rect-2 {*/
+    /*width: 18px;*/
+    /*height: 20px;*/
+    /*border-bottom: 3px solid rgb(94, 66, 176);*/
+  /*}*/
+
+  /*.sec-collab__block {*/
+    /*height: 283px;*/
+    /*width: 100%;*/
+  /*}*/
+
+  /*.text-collab__block {*/
+    /*padding: 0 0 0 6px;*/
+    /*width: 290px;*/
+    /*margin-left: 0;*/
+  /*}*/
+
+  /*.text-collab__block h2 {*/
+    /*height: 20px;*/
+    /*font-size: 28px;*/
+    /*letter-spacing: 1.4px;*/
+  /*}*/
+
+  /*.text-collab__block p {*/
+    /*letter-spacing: 0.75px;*/
+    /*font-size: 15px;*/
+    /*width: 95%;*/
+    /*text-align: left;*/
+    /*line-height: 18px;*/
+  /*}*/
+
+  /*.numbers-block-1 {*/
+    /*padding: 81px 0 0 0;*/
+    /*width: 220px;*/
+    /*font-size: 14px;*/
+  /*}*/
+
+  /*.third-growth__block {*/
+    /*display: none;*/
+    /*height: 230px;*/
+    /*width: 100%;*/
+  /*}*/
+
+  /*.text-growth__block {*/
+    /*margin-left: 6px;*/
+    /*height: 205px;*/
+  /*}*/
+
+  /*.text-growth__block h2 {*/
+    /*height: 20px;*/
+    /*font-size: 28px;*/
+    /*letter-spacing: 1.4px;*/
+  /*}*/
+
+  /*.text-growth__block p {*/
+    /*width: 92%;*/
+    /*line-height: 20px;*/
+    /*font-size: 15px;*/
+  /*}*/
+
+  /*.growth {*/
+    /*padding: 30px 0 0 0;*/
+    /*width: 160px;*/
+  /*}*/
+
+  /*.rect-3 {*/
+    /*width: 18px;*/
+    /*height: 20px;*/
+    /*border-bottom: 3px solid #ffffff;*/
+  /*}*/
+
+  /*.basket-1-con__block {*/
+    /*width: 100%;*/
+    /*height: 316px;*/
+  /*}*/
+
+  /*.basket-players__block {*/
+    /*margin: 0;*/
+    /*margin-left: 6px;*/
+    /*height: 250px;*/
+    /*width: auto;*/
+  /*}*/
+
+  /*.basket-players__block h1 {*/
+    /*padding: 35px 0 0 0;*/
+  /*}*/
+
+  /*.players-con {*/
+    /*display: none;*/
+    /*padding: 30px 0 0 0;*/
+    /*width: 225px;*/
+  /*}*/
+
+  /*.players-con h2 {*/
+    /*height: 20px;*/
+    /*font-size: 28px;*/
+    /*letter-spacing: 1.4px;*/
+  /*}*/
+
+  /*.basket-players__block p {*/
+    /*display: none;*/
+    /*margin: 30px 0 0 0;*/
+    /*font-size: 15px;*/
+    /*width: 92%;*/
+    /*line-height: 20px;*/
+  /*}*/
+
+  /*!*--2--*!*/
+  /*.basket-2-collab__block {*/
+    /*display: none;*/
+    /*width: 320px;*/
+    /*height: 180px;*/
+  /*}*/
+
+  /*.basket-collab__block {*/
+    /*margin-right: 0;*/
+    /*margin-left: 6px;*/
+    /*height: 180px;*/
+  /*}*/
+
+  /*.players-colab {*/
+    /*padding: 33px 0 0 0;*/
+    /*width: 275px;*/
+  /*}*/
+
+  /*.players-colab h2 {*/
+    /*height: 20px;*/
+    /*font-size: 28px;*/
+    /*letter-spacing: 1.4px;*/
+  /*}*/
+
+  /*.basket-collab__block p {*/
+    /*margin: 31px 0 0 0;*/
+    /*font-size: 15px;*/
+    /*letter-spacing: 0.9px;*/
+    /*width: 92%;*/
+    /*line-height: 20px;*/
+  /*}*/
+
+  /*!*--3--*!*/
+  /*.basket-3-growth__block {*/
+    /*width: 320px;*/
+    /*height: 240px;*/
+    /*background: #f5f4f9;*/
+  /*}*/
+
+  /*.basket-growth__block {*/
+    /*display: block;*/
+  /*}*/
+
+  /*.basket-growth__block > img {*/
+    /*width: 302px;*/
+    /*height: 250px;*/
+  /*}*/
+
+  /*.basket-growth__block {*/
+    /*width: 100%;*/
+    /*margin-right: 0;*/
+    /*margin-left: 6px;*/
+  /*}*/
+
+  /*.rect-3 {*/
+    /*width: 18px;*/
+    /*color: #000000;*/
+    /*border-bottom: 3px solid #5e42b0;*/
+  /*}*/
+
+  /*.players-growth {*/
+    /*padding: 81px 0 0 0;*/
+    /*width: 165px;*/
+  /*}*/
+
+  /*.players-growth h2 {*/
+    /*height: 20px;*/
+    /*font-size: 28px;*/
+    /*letter-spacing: 1.4px;*/
+  /*}*/
+
+  /*.basket-growth__block p {*/
+    /*width: 97%;*/
+    /*margin: 27px 0 0 0;*/
+    /*font-size: 15px;*/
+    /*line-height: 20px;*/
+    /*letter-spacing: 0.9px;*/
+    /*color: #000000;*/
+  /*}*/
+
+  /*.basketball-player {*/
+    /*transform: none;*/
+    /*display: block;*/
+    /*top: 1260px;*/
+    /*left: 3px;*/
+    /*right: 15px;*/
+  /*}*/
+
+  /*.basket-1-line {*/
+    /*display: block;*/
+    /*top: 1380px;*/
+    /*left: 52px;*/
+    /*right: 0;*/
+  /*}*/
+
+  /*.basket-1-line > img {*/
+    /*width: 96px;*/
+    /*height: 110px;*/
+  /*}*/
+
+  /*.basket-2-line {*/
+    /*display: block;*/
+    /*top: 1280px;*/
+    /*right: 0;*/
+    /*left: 190px;*/
+  /*}*/
+
+  /*.basket-2-line > img {*/
+    /*width: 80px;*/
+    /*height: 93px;*/
+  /*}*/
+
+  /*.basketball-player > img {*/
+    /*width: 300px;*/
+    /*height: 250px;*/
+  /*}*/
+
+  /*!*---01be active*!*/
+  /*.bridge-01-block {*/
+    /*height: 500px;*/
+  /*}*/
+
+  /*.bridge-person-block {*/
+    /*width: 50%;*/
+    /*height: 350px;*/
+  /*}*/
+
+  /*.bridge-person-block > img {*/
+    /*width: 100%;*/
+    /*height: 350px;*/
+  /*}*/
+
+  /*.text_block {*/
+    /*height: 200px;*/
+    /*width: 100vw;*/
+  /*}*/
+
+  /*.text-big_block {*/
+    /*padding: 35px 0 0 19px;*/
+    /*font-size: 28px;*/
+    /*letter-spacing: 1.4px;*/
+    /*width: 290px;*/
+    /*opacity: 0.4;*/
+  /*}*/
+
+  /*.text-beactive_block {*/
+    /*margin: 20px 0 0 19px;*/
+    /*width: 92%;*/
+    /*font-size: 16px;*/
+    /*letter-spacing: 0.8px;*/
+    /*line-height: 20px;*/
+  /*}*/
+
+  /*!*--couch--*!*/
+  /*.couch-02__block {*/
+    /*height: 550px;*/
+  /*}*/
+
+  /*.couch-pict {*/
+    /*height: 350px;*/
+    /*width: 100vw;*/
+    /*margin: 0;*/
+  /*}*/
+
+  /*.couch-pict > img {*/
+    /*width: 100%;*/
+    /*height: 350px;*/
+  /*}*/
+
+  /*.find {*/
+    /*padding: 38px 0 0 19px;*/
+  /*}*/
+
+  /*.find_text {*/
+    /*margin: 20px 0 0 19px;*/
+    /*width: 92%;*/
+    /*height: 50px;*/
+    /*letter-spacing: 0.9px;*/
+    /*font-size: 16px;*/
+    /*line-height: 20px;*/
+  /*}*/
+
+  /*.basket-3-growth__block {*/
+    /*width: 100%;*/
+  /*}*/
+
+  /*.winners_block {*/
+    /*height: 575px;*/
+  /*}*/
+
+  /*.winners-image {*/
+    /*height: 350px;*/
+    /*width: 100vw;*/
+  /*}*/
+
+  /*.winners-image > img {*/
+    /*width: 100%;*/
+    /*height: 350px;*/
+  /*}*/
+
+  /*.work {*/
+    /*margin: 30px 0 0 19px;*/
+    /*width: 92%;*/
+    /*height: 77px;*/
+    /*letter-spacing: 0.9px;*/
+    /*font-size: 16px;*/
+    /*line-height: 20px;*/
+  /*}*/
+
+  /*.big-rect {*/
+    /*display: block;*/
+    /*width: 70px;*/
+    /*height: 70px;*/
+    /*!*top: 2005px;*!*/
+    /*!*left: 20px;*!*/
+    /*!*right: 230px;*!*/
+  /*}*/
+
+  /*.rect-small-block {*/
+    /*padding: 27px;*/
+  /*}*/
+
+  /*.rect-small {*/
+    /*width: 16px;*/
+    /*height: 18px;*/
+    /*font-size: 14px;*/
+    /*border-bottom: 4px solid #907acb;*/
+  /*}*/
+
+  /*.second-block {*/
+    /*!*top: 2505px;*!*/
+    /*!*left: 20px;*!*/
+    /*!*right: 230px;*!*/
+  /*}*/
+
+  /*.third-block {*/
+/*!*top: 3054px;*!*/
+/*!*left: 20px;*!*/
+/*!*right: 230px;*!*/
+/*}*/
+
+  /*--footer--*/
+  /*.footer {*/
+    /*height: 570px;*/
+    /*width: 100vw;*/
+  /*}*/
+
+  /*.footer-up_block {*/
+    /*height: 520px;*/
+    /*width: 100vw;*/
+  /*}*/
+
+  /*.footer-down_block {*/
+    /*height: 50px;*/
+    /*width: 100vw;*/
+  /*}*/
+
+  /*.footer-nav_blocks {*/
+    /*padding: 19px 0 0 0;*/
+    /*margin-left: 0;*/
+  /*}*/
+
+  /*.footer-logo_block {*/
+    /*width: 170px;*/
+    /*height: 30px;*/
+  /*}*/
+
+  /*.footer-logo_block img {*/
+    /*width: 170px;*/
+    /*height: 30px;*/
+  /*}*/
+
+  /*.facebook-icon {*/
+    /*margin: 0;*/
+    /*width: 10px;*/
+    /*height: 18px;*/
+  /*}*/
+
+  /*.twitter-icon {*/
+    /*margin: 0;*/
+    /*height: 15px;*/
+    /*width: 18px;*/
+  /*}*/
+
+  /*.instagram-icon {*/
+    /*height: 17px;*/
+    /*width: 17px;*/
+  /*}*/
+
+  /*.facebook-icon img {*/
+    /*width: 10px;*/
+    /*height: 18px;*/
+  /*}*/
+
+  /*.twitter-icon img {*/
+    /*margin: 0;*/
+    /*height: 15px;*/
+    /*width: 18px;*/
+  /*}*/
+
+  /*.instagram-icon img {*/
+    /*height: 17px;*/
+    /*width: 17px;*/
+  /*}*/
+
+  /*table {*/
+    /*line-height: 1;*/
+    /*text-transform: capitalize;*/
+    /*letter-spacing: 1px;*/
+    /*text-align: left;*/
+    /*color: #ffffff;*/
+  /*}*/
+
+  /*.button {*/
+    /*width: 73px;*/
+    /*height: 78px;*/
+    /*margin: 0 0 0 110px;*/
+  /*}*/
+
+  /*.button > img {*/
+    /*width: 73px;*/
+    /*height: 78px;*/
+  /*}*/
+
+  /*.nav_blocks {*/
+    /*padding: 100px 0 0 0;*/
+    /*margin-left: 0;*/
+  /*}*/
+
+  /*.footer-first-text {*/
+    /*font-size: 34px;*/
+    /*width: 290px;*/
+    /*height: 24px;*/
+    /*letter-spacing: 1.7px;*/
+  /*}*/
+
+  /*.footer-sec-text {*/
+    /*padding: 7px 0 0 0;*/
+    /*width: 290px;*/
+    /*height: 24px;*/
+    /*font-size: 15px;*/
+  /*}*/
+
+  /*.footer-text_block {*/
+    /*padding: 57px 0 0 5px;*/
+  /*}*/
+
+  /*.download-buttons {*/
+    /*margin: 150px 0 0 429px;*/
+    /*width: 672px;*/
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: space-between;*/
+  /*}*/
+
+  /*.background_block {*/
+    /*height: 168px;*/
+    /*width: 100%;*/
+    /*opacity: 0.6;*/
+    /*position: absolute;*/
+  /*}*/
+
+  /*.download-buttons {*/
+    /*margin: 72px 0 0 0;*/
+    /*width: 292px;*/
+  /*}*/
+
+  /*.slider-block {*/
+    /*width: 100%;*/
+  /*}*/
+
+  /*.dots_block {*/
+    /*margin: 10px auto;*/
+    /*width: 55px;*/
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+  /*}*/
+
+  /*#dot2 {*/
+    /*background: #5c3caf;*/
+  /*}*/
+
+  /*.dots {*/
+    /*width: 10px;*/
+    /*height: 10px;*/
+    /*background-color: #5c3caf;*/
+    /*background-color: #d8d8d8;*/
+    /*border-radius: 50%;*/
+  /*}*/
+/*}*/
+
+
+/*# sourceMappingURL=/styles.b61e60ae.css.map */
