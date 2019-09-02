@@ -1,8 +1,8 @@
-@import "fonts.css";
-@import "common.css";
-@import "header.css";
-@import "section.css";
-@import "footer.css";
+@import "./fonts.css";
+@import "./common.css";
+@import "./header.css";
+@import "./section.css";
+@import "./footer.css";
 
 /*------------------- MEDIA QUERY (1920 - 1440)px --------------------*/
 /*@media only screen and (max-width: 1919px) and (min-width: 1440px) {*/

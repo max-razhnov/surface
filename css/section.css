@@ -35,7 +35,8 @@
   color: #e7e7e7;
   font: 90px / normal "ProximaNova";
   font-weight: 700;
-  line-height: 0.67;
+  line-height: 0.8;
+  /* line-height: 0.67; */
 }
 
 .section-subtitle {
@@ -135,13 +136,13 @@
   width: 100vw;
 }
 
-.section-number__top > img {
+.section-number__top>img {
   height: 730px;
   width: 50%;
+  object-fit: cover;
 }
 
-.section-number__top .section-wrapper,
-.section-number__bottom .section-wrapper {
+.section-number__top .section-wrapper, .section-number__bottom .section-wrapper {
   padding: 0;
   margin: 257px 0 0 127px;
 }
@@ -150,9 +151,7 @@
   padding: 0;
 }
 
-.section-number__top .section-description,
-.section-number__middle .section-description,
-.section-number__bottom .section-description {
+.section-number__top .section-description, .section-number__middle .section-description, .section-number__bottom .section-description {
   max-width: 322px;
   margin-top: 120px;
   font-size: 24px;
@@ -170,9 +169,10 @@
   justify-content: space-between;
 }
 
-.section-number__middle > img {
+.section-number__middle>img {
   width: 50%;
   height: 730px;
+  object-fit: cover;
 }
 
 .section-number__middle .section-description {
@@ -197,9 +197,10 @@
   display: flex;
 }
 
-.section-number__bottom > img {
+.section-number__bottom>img {
   height: 730px;
   width: 50%;
+  object-fit: cover;
 }
 
 .section-number__bottom .section-description {
@@ -249,4 +250,51 @@
   top: -30px;
   right: 6.5%;
   bottom: 0;
+  z-index: 20;
+  ;
+}
+
+@media all and (max-width: 1920px) {
+  .section-number__middle .section-wrapper {
+    margin: 0 auto;
+  }
+}
+
+@media all and (max-width: 1600px) {
+  #player-football {
+    left: 10%;
+  }
+}
+
+@media all and (max-width: 1440px) {
+  .section-number__middle .title {
+    width: min-content;
+  }
+  .section-number__middle .section-wrapper {
+    width: fit-content;
+  }
+  #player-football {
+    left: 0%;
+  }
+  #player-basket {
+    right: -15%;
+  }
+  .section-top .section-wrapper {
+    max-width: 592px;
+  }
+  .section-middle .section-wrapper {
+    max-width: 544px;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  #player-football {
+    left: -15%;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .footer-bottom .logo, .contact-info {
+    visibility: hidden;
+  }
 }
