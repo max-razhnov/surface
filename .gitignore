@@ -5,6 +5,8 @@
 # IntelliJ project files
 .idea/*
 .vscode/*
+.cache
 *.iml
 out
 gen
+node_modules
