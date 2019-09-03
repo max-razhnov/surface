@@ -184,7 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"css/styles.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./..\\fonts\\ProximaNova-Regular.woff":[["ProximaNova-Regular.03028eba.woff","fonts/ProximaNova-Regular.woff"],"fonts/ProximaNova-Regular.woff"],"./..\\fonts\\ProximaNova-Bold.woff":[["ProximaNova-Bold.95242004.woff","fonts/ProximaNova-Bold.woff"],"fonts/ProximaNova-Bold.woff"],"./..\\img\\football-back.png":[["football-back.30cbb067.png","img/football-back.png"],"img/football-back.png"],"./..\\img\\SURFACE.png":[["SURFACE.18f95b66.png","img/SURFACE.png"],"img/SURFACE.png"],"./..\\img\\Icon-Apple.png":[["Icon-Apple.50428946.png","img/Icon-Apple.png"],"img/Icon-Apple.png"],"./..\\img\\Icon-GooglePlay.png":[["Icon-GooglePlay.3aa72e96.png","img/Icon-GooglePlay.png"],"img/Icon-GooglePlay.png"],"./..\\img\\footer-people.png":[["footer-people.cea5e5af.png","img/footer-people.png"],"img/footer-people.png"],"./..\\img\\facebook.png":[["facebook.1ac97181.png","img/facebook.png"],"img/facebook.png"],"./..\\img\\twitter.png":[["twitter.beda2cb5.png","img/twitter.png"],"img/twitter.png"],"./..\\img\\instagram.png":[["instagram.c2789421.png","img/instagram.png"],"img/instagram.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -388,4 +393,4 @@ function hmrAcceptRun(bundle, id) {
   }
 }
 },{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/index.js.map
+//# sourceMappingURL=/styles.5c32a3d8.js.map
