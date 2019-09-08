@@ -55,13 +55,6 @@
   }
 }
 
-// .header-top__info {
-//   height: 35px;
-//   width: 100%;
-//   padding-top: 54px;
-//   display: flex;
-//   justify-content: space-between;
-// }
 
 .logo {
   height: 33px;
@@ -69,43 +62,6 @@
   background: url("../img/SURFACE.png") no-repeat center / contain;
 }
 
-// .header-about {
-//   display: flex;
-//   align-items: center;
-//   text-transform: uppercase;
-//   font: 14px / normal $fnt_regular;
-//   letter-spacing: 0.7px;
-// }
-
-// .header-about:hover {
-//   opacity: 0.8;
-//   transition: 0.2s ease-in-out;
-// }
-
-// .header-top-txt,
-// .header-bottom-txt {
-//   color: $clr_white;
-//   text-transform: uppercase;
-//   font: 90px / normal $fnt_bold;
-//   letter-spacing: 4.2px;
-// }
-
-// .header-top-txt {
-//   width: fit-content;
-//   text-align: left;
-//   position: relative;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-//   margin: 285px 0 0 0;
-// }
-
-// .header-bottom-txt {
-//   line-height: 0.8;
-//   position: relative;
-//   text-align: right;
-//   margin: 0;
-// }
 
 #line {
   height: 6px;
@@ -136,7 +92,6 @@
   }
 
   &-right__container {
-    /*height: 12px;*/
     width: 32.45614%;
     display: flex;
     justify-content: space-between;
@@ -156,32 +111,6 @@
   }
 }
 
-// .menu-left__container {
-//   width: 58.77193%;
-//   display: flex;
-//   justify-content: space-between;
-// }
-
-// .menu-right__container {
-//   /*height: 12px;*/
-//   width: 32.45614%;
-//   display: flex;
-//   justify-content: space-between;
-// }
-
-// .menu__item {
-//   text-decoration: none;
-//   color: $clr_md_purple;
-//   font-size: 14px;
-//   font-weight: 400;
-//   letter-spacing: 0.7px;
-//   text-transform: uppercase;
-// }
-
-// .menu__item:hover {
-//   color: $clr_white;
-//   transition: 0.5s;
-// }
 
 .btn-wrap {
   margin: 180px auto 0 auto;
@@ -229,18 +158,6 @@
   }
 }
 
-// .app-btn:first-child {
-//   padding: 0 67px 0 43px;
-// }
-
-// .app-btn:nth-child(2) {
-//   padding: 0 85px 0 64px;
-// }
-
-// .app-btn:hover {
-//   box-shadow: 0px 16px 24px 0 $clr_shadow;
-//   cursor: pointer;
-// }
 
 .apple-icon {
   display: block;
@@ -250,15 +167,6 @@
   background: url("../img/Icon-Apple.png") no-repeat center / contain;
 }
 
-// .app-btn__text {
-//   text-align: left;
-//   margin: 0;
-//   text-transform: uppercase;
-//   font: 14px / normal "ProximaNova";
-//   font-weight: 400;
-//   letter-spacing: 0.7px;
-//   color: $clr_white;
-// }
 
 .app-text {
   display: block;
@@ -317,21 +225,6 @@
     }
   }
 
-  // .menu-left__container {
-  //   max-width: 378px;
-  //   width: 100%;
-  // }
-
-  // .menu-right__container {
-  //   max-width: 226px;
-  //   width: 100%;
-  // }
-
-  // .menu__item {
-  //   font: 16px / normal $fnt_regular;
-  //   font-weight: 400;
-  //   letter-spacing: 0.7px;
-  // }
 }
 // and (min-width: 425px)
 @media all and (max-width: 670px) {
@@ -366,8 +259,6 @@
   .app-btn {
     width: 142px;
     height: 39px;
-    // margin: 0;
-    // dis
     &:first-child {
       padding: 0 17px 0 3px;
     }
