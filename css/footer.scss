@@ -8,6 +8,7 @@
   height: 960px;
 
   &-top__txt {
+    position: relative;
     margin: 18px 0 0 0;
     color: $clr_white;
     text-transform: uppercase;
@@ -15,14 +16,17 @@
     line-height: 0.67;
     height: fit-content;
     letter-spacing: 4.5px;
+    z-index: 100;
   }
 
   &-bottom__txt {
+    position: relative;
     margin: 18px 0 0 0;
     text-transform: uppercase;
     font: 36px/0.94 $fnt_bold;
     text-align: left;
     color: $clr_footer_subtitle;
+    z-index: 100;
   }
 
   &-title {
@@ -42,6 +46,18 @@
     display: flex;
     background-color: $clr_footer_background;
     height: 168px;
+  }
+
+  & .small {
+    top: 215px;
+    left: 36.2%;
+    z-index: 2;
+  }
+
+  & .big {
+    top: 135px;
+    left: 53.7%;
+    z-index: 2;
   }
 }
 
@@ -98,6 +114,15 @@
   .footer {
     height: auto;
     margin-top: 140px;
+
+    & .small {
+      top: 430px;
+      left: 8%;
+    }
+    & .big {
+      top: 355px;
+      left: 45.5%;
+    }
   }
   .footer-bottom .wrapper {
     padding-top: 0;
@@ -149,6 +174,18 @@
     & .wrapper {
       padding-top: 97px;
     }
+      & .small {
+          width: 62px;
+          height: 70px;
+          top: 210px;
+          left: 8%;
+      }
+      & .big {
+          width: 100px;
+          height: 124px;
+          top: 200px;
+          left: 45.5%;
+      }
   }
 
   .footer-title > img {
