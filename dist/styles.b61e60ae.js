@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+})({"C:/Users/max/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -149,7 +149,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"C:/Users/max/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -184,37 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"css/fonts.css":[function(require,module,exports) {
+},{"./bundle-url":"C:/Users/max/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"css/styles.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\fonts\\ProximaNova-Regular.woff":[["ProximaNova-Regular.03028eba.woff","fonts/ProximaNova-Regular.woff"],"fonts/ProximaNova-Regular.woff"],"./..\\fonts\\ProximaNova-Bold.woff":[["ProximaNova-Bold.95242004.woff","fonts/ProximaNova-Bold.woff"],"fonts/ProximaNova-Bold.woff"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"css/common.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"css/header.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./..\\img\\football-back.png":[["football-back.30cbb067.png","img/football-back.png"],"img/football-back.png"],"./..\\img\\SURFACE.png":[["SURFACE.18f95b66.png","img/SURFACE.png"],"img/SURFACE.png"],"./..\\img\\Icon-Apple.png":[["Icon-Apple.50428946.png","img/Icon-Apple.png"],"img/Icon-Apple.png"],"./..\\img\\Icon-GooglePlay.png":[["Icon-GooglePlay.3aa72e96.png","img/Icon-GooglePlay.png"],"img/Icon-GooglePlay.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"css/section.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"css/footer.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./..\\img\\footer-people.png":[["footer-people.cea5e5af.png","img/footer-people.png"],"img/footer-people.png"],"./..\\img\\facebook.png":[["facebook.1ac97181.png","img/facebook.png"],"img/facebook.png"],"./..\\img\\twitter.png":[["twitter.beda2cb5.png","img/twitter.png"],"img/twitter.png"],"./..\\img\\instagram.png":[["instagram.c2789421.png","img/instagram.png"],"img/instagram.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"css/styles.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./fonts.css":"css/fonts.css","./common.css":"css/common.css","./header.css":"css/header.css","./section.css":"css/section.css","./footer.css":"css/footer.css","_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./..\\fonts\\ProximaNova-Regular.woff":[["ProximaNova-Regular.03028eba.woff","fonts/ProximaNova-Regular.woff"],"fonts/ProximaNova-Regular.woff"],"./..\\fonts\\ProximaNova-Bold.woff":[["ProximaNova-Bold.95242004.woff","fonts/ProximaNova-Bold.woff"],"fonts/ProximaNova-Bold.woff"],"./..\\img\\football-back.png":[["football-back.30cbb067.png","img/football-back.png"],"img/football-back.png"],"./..\\img\\SURFACE.png":[["SURFACE.18f95b66.png","img/SURFACE.png"],"img/SURFACE.png"],"./..\\img\\Icon-Apple.png":[["Icon-Apple.50428946.png","img/Icon-Apple.png"],"img/Icon-Apple.png"],"./..\\img\\Icon-GooglePlay.png":[["Icon-GooglePlay.3aa72e96.png","img/Icon-GooglePlay.png"],"img/Icon-GooglePlay.png"],"./..\\img\\footer-people.png":[["footer-people.cea5e5af.png","img/footer-people.png"],"img/footer-people.png"],"./..\\img\\facebook.png":[["facebook.1ac97181.png","img/facebook.png"],"img/facebook.png"],"./..\\img\\twitter.png":[["twitter.beda2cb5.png","img/twitter.png"],"img/twitter.png"],"./..\\img\\instagram.png":[["instagram.c2789421.png","img/instagram.png"],"img/instagram.png"],"_css_loader":"C:/Users/max/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"C:/Users/max/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -242,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52810" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49470" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -417,5 +392,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+},{}]},{},["C:/Users/max/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
 //# sourceMappingURL=/styles.b61e60ae.js.map
