@@ -273,7 +273,7 @@
   background: url("../img/Icon-GooglePlay.png") no-repeat center / contain;
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 767.9px) {
   .header .wrapper {
     max-width: calc(768px - 20px - 20px);
   }
@@ -295,23 +295,23 @@
   }
 
   .menu {
+    margin: 45px 0 20px 0;
     justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
     max-width: 666px;
 
     &-left__container {
-      max-width: 378px;
+      justify-content: space-around;
       width: 100%;
     }
 
     &-right__container {
-      max-width: 226px;
+      justify-content: space-around;
       width: 100%;
+      margin-top: 12px;
     }
 
     &__item {
-      font: 16px / normal $fnt_regular;
+      font: 12px / normal $fnt_regular;
       font-weight: 400;
       letter-spacing: 0.7px;
     }
@@ -333,18 +333,29 @@
   //   letter-spacing: 0.7px;
   // }
 }
+// and (min-width: 425px)
+@media all and (max-width: 670px) {
+  .header {
+    height: auto;
+  }
+  .header-top-txt {
+    margin-top: 140px;
+  }
 
-@media all and (min-width: 425px) and (max-width: 670px) {
   .header-top-txt,
   .header-bottom-txt {
-    font: 50px/ 0.97 $fnt_bold;
+    font: 32px/ 0.97 $fnt_bold;
     letter-spacing: 1.6px;
+  }
+  .header-bottom-txt {
+    margin-left: 40px;
   }
 
   .header-about {
     display: none;
   }
   .header-top__info {
+    padding-top: 40px;
     justify-content: center;
   }
 
@@ -353,7 +364,34 @@
   }
 
   .app-btn {
-    /*width: 142px;*/
-    /*height: 39px;*/
+    width: 142px;
+    height: 39px;
+    // margin: 0;
+    // dis
+    &:first-child {
+      padding: 0 17px 0 3px;
+    }
+    &:nth-child(2) {
+      padding: 0 17px 0 23px;
+    }
+  }
+
+  .app-btn__text {
+    font-size: 8px;
+    letter-spacing: 0.4px;
+  }
+  .apple-icon,
+  .google-icon {
+    width: 16px;
+    height: 17px;
+  }
+  .btn-menu__container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .header .btn-wrap {
+    min-width: calc(142px * 2 + 8px);
+    margin: 120px auto 0 auto;
+    max-width: calc(320px - 14px * 2);
   }
 }
