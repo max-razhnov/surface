@@ -13,7 +13,6 @@
   height: 5px;
   z-index: 33;
 }
-
 .section-top {
   position: relative;
   top: 0;
@@ -258,7 +257,20 @@
   left: 16.6%;
   right: 0;
   bottom: 0;
-  z-index: 50;
+  width: fit-content;
+  height: fit-content;
+
+  & > img:nth-child(1) {
+    position: relative;
+    z-index: 50;
+  }
+}
+
+#line-football {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  z-index: 20;
 }
 
 #player-basket {
@@ -266,7 +278,29 @@
   top: -30px;
   right: 6.5%;
   bottom: 0;
-  z-index: 20;
+  width: fit-content;
+  height: fit-content;
+  // z-index: 50;
+  & > img {
+    &:nth-child(1) {
+      // width: 100%;
+      // height: 100%;
+      position: relative;
+      z-index: 50;
+    }
+    &:nth-child(2) {
+      position: absolute;
+      top: 70px;
+      right: 6.5%;
+      z-index: 20;
+    }
+    &:nth-child(3) {
+      position: absolute;
+      top: 340px;
+      right: 45%;
+      z-index: 20;
+    }
+  }
 }
 
 .slider-buttons {
@@ -337,8 +371,36 @@
 
 @media all and (max-width: 1024px) {
   #player-football {
-    top: 61px;
-    left: -40%;
+    top: 94px;
+    left: -20%;
+    width: 497px;
+    height: 699px;
+
+    & > img:nth-child(1) {
+      width: 100%;
+      height: 100%;
+    }
+
+    & > img:nth-child(2) {
+      top: 5%;
+      left: -35%;
+    }
+  }
+  #player-basket {
+    width: 690px;
+    height: 565px;
+    top: 30px;
+    right: -35%;
+    & > img {
+      &:nth-child(1) {
+        width: 100%;
+        height: 100%;
+      }
+      &:nth-child(3) {
+        top: 150px;
+        right: 35%;
+      }
+    }
   }
 
   .section-top .section-wrapper {
@@ -364,10 +426,6 @@
 
   .section-bottom__container {
     height: 205px;
-  }
-
-  #player-basket {
-    right: -65%;
   }
 
   .section-top,
@@ -471,6 +529,24 @@
     margin: 0 auto;
     width: 302px;
     height: 248px;
+    & > img {
+      &:nth-child(1) {
+        width: 100%;
+        height: 100%;
+      }
+      &:nth-child(2) {
+        width: 81px;
+        height: 91px;
+        top: 20px;
+        right: 10%;
+      }
+      &:nth-child(3) {
+        width: 96px;
+        height: 111px;
+        top: 100px;
+        right: 45%;
+      }
+    }
   }
 
   #player-football {
@@ -480,6 +556,17 @@
     left: 0;
     right: 0;
     margin: 0 auto;
+    & > img {
+      &:nth-child(1) {
+        width: 100%;
+        height: 100%;
+      }
+      &:nth-child(2) {
+        top: 0;
+        left: -10%;
+        width: 100%;
+      }
+    }
   }
 
   .section-number__top > img,
