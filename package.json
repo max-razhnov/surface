@@ -13,15 +13,17 @@
     "url": "git+https://github.com/max-razhnov/surface.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "max razhnov",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/max-razhnov/surface/issues"
   },
   "homepage": "https://github.com/max-razhnov/surface#readme",
   "dependencies": {
+    "autoprefixer": "^9.6.1",
     "common.css": "^1.0.1",
-    "fonts.css": "^2.0.0"
+    "fonts.css": "^2.0.0",
+    "postcss-modules": "^1.4.1"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.3",
