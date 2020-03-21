@@ -5,14 +5,15 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html --open",
-    "build": "parcel build index.html",
+    "build": "parcel build index.html -d build",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/max-razhnov/surface.git"
   },
-  "keywords": [],
   "author": "max razhnov",
   "license": "ISC",
   "bugs": {
