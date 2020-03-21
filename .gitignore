@@ -11,3 +11,5 @@ out
 gen
 node_modules
 css/old
+dist
+build
