@@ -1,6 +1,6 @@
 # Surface
 
-[https://razhnoff.github.io/surfaceMockUp/](Surface mockup "Surface landing")
+[View Surface page](https://razhnoff.github.io/surfaceMockUp/ "Surface landing")
 
 [Surface Desktop](#Surface-Desktop) |
 [Surface Tablet](#Surface-tablet) |
