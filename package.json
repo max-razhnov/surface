@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html --open",
+    "start": "npm run transpile && parcel index.html --open",
     "build": "parcel build index.html -d build",
     "deploy": "gh-pages -d build",
     "predeploy": "npm run transpile && npm run build",
