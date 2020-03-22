@@ -1,5 +1,7 @@
 # Surface
 
+[View Surface page](https://razhnoff.github.io/surfaceMockUp/ "Surface landing")
+
 [Surface Desktop](#Surface-Desktop) |
 [Surface Tablet](#Surface-tablet) |
 [Surface Mobile](#Surface-Mobile)
