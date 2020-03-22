@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run transpile && parcel index.html --open",
-    "build": "npm run transpile && parcel build index.html -d build --public-url .",
-    "transpile": "node-sass ./src/css/styles.scss ./src/css/styles.css",
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html -d build --public-url .",
     "deploy": "gh-pages -d build",
     "predeploy": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
