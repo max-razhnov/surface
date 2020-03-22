@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html --open",
-    "build": "parcel build index.html -d build --public-url .",
+    "start": "npm run transpile && parcel index.html --open",
+    "build": "npm run transpile && parcel build index.html -d build --public-url .",
+    "transpile": "node-sass ./src/css/styles.scss ./src/css/styles.css",
     "deploy": "gh-pages -d build",
     "predeploy": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,7 +20,9 @@
   "bugs": {
     "url": "https://github.com/max-razhnov/surface/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  },
   "devDependencies": {
     "gh-pages": "^2.2.0",
     "parcel-bundler": "^1.12.4",
