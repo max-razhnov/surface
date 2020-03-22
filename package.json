@@ -19,13 +19,7 @@
   "bugs": {
     "url": "https://github.com/max-razhnov/surface/issues"
   },
-  "homepage": "https://github.com/max-razhnov/surface#readme",
-  "dependencies": {
-    "autoprefixer": "^9.7.4",
-    "common.css": "^1.0.1",
-    "fonts.css": "^2.0.0",
-    "postcss-modules": "^1.5.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "gh-pages": "^2.2.0",
     "parcel-bundler": "^1.12.4",
