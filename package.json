@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run transpile && parcel index.html --open",
-    "build": "parcel build index.html -d build --public-url .",
+    "build": "npm run transpile && parcel build index.html -d build --public-url .",
     "transpile": "node-sass ./src/css/styles.scss ./src/css/styles.css",
     "deploy": "gh-pages -d build",
     "predeploy": "npm run build",
